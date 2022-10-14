@@ -12,10 +12,10 @@ function Footer() {
             <img className={style.footer_logo} src="logo-white.png" alt="" />
             <Line />
             <p className={"paragraph light" + " " + style.footer_text}>
-              Gubloo Technologies is a full-service digital agency with a
-              passion for ingenuity and innovation in every medium, Gubloo
-              Technologies focuses on expanding its digital expertise to bring
-              you the best solutions. We are happy and proud to have in our
+              Your Product Matters is a full-service digital agency with a
+              passion for ingenuity and innovation in every medium, Your Product
+              Matters focuses on expanding its digital expertise to bring you
+              the best solutions. We are happy and proud to have in our
               portfolio a large base of satisfied clients and success stories.
             </p>
           </div>

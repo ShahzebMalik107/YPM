@@ -6,13 +6,12 @@ import Line from "../components/utils/line";
 import { Fragment } from "react";
 import Link from "next/link";
 import InViewPoint from "../components/utils/InViewPoint";
-import line_white from "../components/utils/line-white";
 
 export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Gublootech Home</title>
+        <title>Your Product Matters</title>
         <meta
           name="description"
           content="GublooTech specializes in offering services to medium-sized and large businesses all across the world."
@@ -29,8 +28,8 @@ export default function Home() {
             <h2 className="heading">We Offer a Full Range of B2B Services!</h2>
             <Line />
             <h3 className="subheading">
-              GublooTech specializes in offering services to medium-sized and
-              large businesses all across the world.
+              Your product matters specializes in offering services to
+              medium-sized and large businesses all across the world.
             </h3>
             <ul className={styles.list}>
               <li>
@@ -42,9 +41,10 @@ export default function Home() {
               </li>
               <li>
                 <p className="paragraph">
-                  With a well coordinated unit of 70+ employees, Gublootech
-                  serves its customers globally regardless of their geographical
-                  region, operational domain and organizational fine-points.
+                  With a well coordinated unit of 70+ employees, Your product
+                  matters serves its customers globally regardless of their
+                  geographical region, operational domain and organizational
+                  fine-points.
                 </p>
               </li>
               <li>
@@ -72,12 +72,12 @@ export default function Home() {
               <h2 className="heading">Who We are</h2>
               <Line />
               <p className="paragraph">
-                GublooTech is a one-stop shop for contemporary web/mobile
-                development projects! Our team comprises a talent pool that aims
-                to build complex designs schematically. We possess a great track
-                record of understanding client needs quickly, walking you
-                through each step of the process, and delivering a high-quality
-                product on budget and on schedule.
+                Your product matters is a one-stop shop for contemporary
+                web/mobile development projects! Our team comprises a talent
+                pool that aims to build complex designs schematically. We
+                possess a great track record of understanding client needs
+                quickly, walking you through each step of the process, and
+                delivering a high-quality product on budget and on schedule.
               </p>
               {/* <button className="btn btn-Dark">
                 {" "}
@@ -156,7 +156,7 @@ export default function Home() {
         id="feactured_services"
         className={styles.feactured_services + " padding-100"}
       >
-        <div className="container">
+        {/* <div className="container">
           <div className={styles.we_server_heading}>
             <h2 className="heading">Registered With</h2>
             <Line />
@@ -170,7 +170,7 @@ export default function Home() {
               // "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam "
             }
           </p>
-        </div>
+        </div> */}
         <InViewPoint tract_ID={"feactured_services"} />
         <div id="target_item">
           <div>
@@ -191,28 +191,22 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.service_list + " container"}>
-          <div className={styles.service_list_items}>
+          {/* <div className={styles.service_list_items}>
             <Link href={"https://icci.com.pk/"}>
               <a target={"_blank"}>
                 <Image src={"/services/ICCI.png"} height={176} width={176} />
                 <h3 className="small_heading ">ICCI </h3>
-                {/* <p className="paragraph center">
-              Wordpress, ASP.NET, Node JS, Php etc
-            </p> */}
               </a>
             </Link>
-          </div>
-          <div className={styles.service_list_items}>
+          </div> */}
+          {/* <div className={styles.service_list_items}>
             <Link href={"https://eservices.secp.gov.pk/"}>
               <a target={"_blank"}>
                 <Image src={"/services/SECP.png"} height={176} width={176} />
                 <h3 className="small_heading ">SECP</h3>
-                {/* <p className="paragraph center">
-              Wordpress, ASP.NET, Node JS, Php etc
-            </p> */}
               </a>
             </Link>
-          </div>
+          </div> */}
 
           {/* <div className={styles.service_list_items}>
             <Link href={"https://www.pasha.org.pk/"}>
@@ -226,7 +220,7 @@ export default function Home() {
             </Link>
           </div> */}
 
-          <div className={styles.service_list_items}>
+          {/* <div className={styles.service_list_items}>
             <Link href={"https://techdestination.com/"}>
               <a target={"_blank"}>
                 <Image src={"/services/PSEB.png"} height={176} width={176} />
@@ -234,9 +228,9 @@ export default function Home() {
                 {/* <p className="paragraph center">
               Wordpress, ASP.NET, Node JS, Php etc
             </p> */}
-              </a>
+          {/* </a>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* Testimonials */}
