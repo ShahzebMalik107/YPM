@@ -1,0 +1,161 @@
+.b2b {
+    margin: 100px auto;
+}
+
+.image_right span {
+    display: block !important;
+    margin-right: auto !important;
+}
+
+.list {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    padding-left: 20px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.list li p {
+    margin: 0;
+}
+
+.list li::before {
+    content: " ";
+    height: 7px;
+    width: 7px;
+    background-color: var(--primary_color);
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+}
+
+.whoweare {
+    background-color: var(--secondary_color);
+    padding: 100px 0;
+}
+
+.we_server_heading {
+    max-width: fit-content;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.we_server_icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.we_server_item {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    margin: 25px 0;
+}
+
+.we_server_item p {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.feactured_services {
+    position: relative;
+    min-height: 600px;
+}
+
+.feactured_services_paragraph {
+    max-width: 980px;
+    margin: auto;
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.object_image {
+    position: relative !important;
+    width: 100%;
+    bottom: 0 !important;
+}
+
+.object_image>span {
+    position: relative !important;
+}
+
+.image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.service_list {
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.service_list_items {
+    flex-basis: 22%;
+    text-align: center;
+}
+.service_list_items img{
+    object-fit: contain;
+}
+
+.Testimonials {
+    background-color: var(--primary_color);
+    position: relative;
+    z-index: 1;
+}
+
+.careers {
+    background-color: var(--primary_color);
+    position: relative;
+    z-index: 1;
+}
+
+.fix_width {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+.fix_width button{
+    margin: auto;
+}
+.fix_width .line_heading{
+    margin: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .we_server_item {
+        flex-basis: 33%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .we_server_item {
+        flex-basis: 50%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .we_server_item > p{
+        padding: 0;
+        font-size: 20px;
+    }
+    .service_list {
+        flex-wrap: wrap;
+    }
+    .service_list_items {
+        flex-basis: 100%;
+    }
+}

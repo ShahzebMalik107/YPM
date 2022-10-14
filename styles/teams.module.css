@@ -1,0 +1,242 @@
+.about_heading {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.team_banner{
+  margin-bottom: 50px;
+}
+.team_banner img{
+  width: 100%;
+
+}
+.our_company {
+  margin-bottom: 100px;
+}
+
+.aml span {
+  margin: auto !important;
+  display: block !important;
+  width: 320px !important;
+}
+
+.our_vission {
+  background-color: var(--secondary_color);
+  padding: 50px 0;
+}
+
+.team {
+  margin-top: 100px;
+}
+
+.ourTeam {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.team_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team_main > div {
+  /* flex-basis: 23%; */
+  margin: 25px 10px;
+  position: relative;
+  /* for responsive */
+  /* width: 270px; */
+}
+
+.team_wraper .team_img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team_wraper .team_img img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: 0.5s all;
+}
+
+.team_img_normal {
+  position: relative;
+}
+
+.team_img_hover {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transform: translateX(-100%) scale(0);
+}
+
+.team_img:hover .team_img_normal {
+  /* transform: translateY(100%); */
+  transform: scale(0);
+  opacity: 0;
+}
+
+.team_img:hover .team_img_hover {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+
+.team_title {
+  background: rgba(255, 255, 255, 0.918);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 25px;
+  backdrop-filter: blur(3px);
+}
+
+.team_title h2 {
+  font-weight: 400;
+  color: #000 !important;
+  margin: 5px 0;
+}
+
+.team_title p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--secondary_color);
+  margin: 10px 0;
+}
+
+.select_tab {
+  text-align: center;
+  display: none;
+}
+
+select#teams_tabs_select {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  border-color: var(--paragraph-color);
+  color: var(--paragraph-color);
+}
+
+.team_tabs ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.team_tabs ul li {
+  margin: 0 5px;
+  cursor: pointer;
+  color: var(--paragraph-color);
+  font-weight: 300;
+  padding: 5px 0;
+  transition: 0.5s all;
+  border-bottom: 2px solid transparent;
+}
+
+.team_tabs ul li:hover {
+  color: var(--primary_color) !important;
+  border-bottom: 2px solid var(--primary_color);
+}
+
+.team_tab_active {
+  color: var(--primary_color) !important;
+  border-bottom: 2px solid var(--primary_color) !important;
+}
+
+.tab_data_deactive {
+  display: none;
+}
+
+.tab_data_active {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  order: 100;
+}
+
+.team_CEO {
+  order: 1;
+}
+
+.team_CTO {
+  order: 2;
+}
+
+.team_PM {
+  order: 3;
+}
+
+.team_Senior_Dev {
+  order: 4;
+}
+
+.team_Dev {
+  order: 5;
+}
+
+.team_sale {
+  order: 6;
+}
+
+.team_Design {
+  order: 7;
+}
+
+.team_Management {
+  order: 8;
+}
+
+.team_SD {
+  order: -1;
+}
+.teams_wraper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.Gallery{
+  margin: 50px 0;
+}
+.Gallery img{
+  object-fit: cover;
+}
+.team_img  img {
+  max-width: 271px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 1024px) {
+  .teams_wraper{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .select_tab {
+    display: block;
+  }
+  .team_tabs {
+    display: none;
+  }
+  .our_company > div:nth-child(1) {
+    order: 2;
+    margin-top: 25px;
+  }
+  .teams_wraper{
+    justify-content: center;
+  }
+  .teams_wraper{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tab_data_active{
+    width: fit-content;
+    margin: auto;
+  }
+}

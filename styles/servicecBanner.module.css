@@ -1,0 +1,13 @@
+.Banner{
+    min-height: 600px;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner_left{
+    flex-basis: 50%;
+}
+.banner_flex{
+    align-items: center;
+}

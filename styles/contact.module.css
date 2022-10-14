@@ -1,0 +1,66 @@
+.contact_main {
+    padding: 80px 0;
+    background-color: #F7F7F7;
+    min-height: 100vh;
+}
+.title{
+    padding-top: 128px;
+    padding-bottom: 60px;
+    width: fit-content;
+    margin: auto;
+}
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.form
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.form_label
+{
+    display: block;
+    font-size: 20px;
+    /* margin-left: 15px; */
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.form_input
+{
+    width: 95%;
+    padding: 20px 15px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.form_label_sterik
+{
+    color: #ED5C56;
+}
+.form_submit
+{
+    padding: 15px 85px;
+    border: navajowhite;
+    background-color: #ED5C56;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: .3s all linear;
+    margin-top: 20px;
+}
+.form_submit:hover{
+    background-color: var(--secondary_color);
+}
+@media only screen and (max-width:767px)
+{
+    .form_input
+    {
+        width: 100%;
+    }
+    .form_container{
+        display: grid;
+        grid-template-columns: unset;
+    }
+}

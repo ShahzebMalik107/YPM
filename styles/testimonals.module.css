@@ -1,0 +1,27 @@
+.text_head{
+    width: fit-content;
+    margin: auto;
+    margin-top: 192px;
+}
+.main_container{
+    margin: 160px 0;
+}
+.button_flex{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.flexbasis-button{
+    flex-basis: 60%;
+}
+
+.testimonials_page
+{
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .testimonials_page section:nth-child(1) > div:nth-child(1) {
+        margin: 70px 0 160px;
+    }
+}
