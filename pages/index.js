@@ -14,7 +14,7 @@ export default function Home() {
         <title>YourProductMatters</title>
         <meta
           name="description"
-          content="GublooTech specializes in offering services to medium-sized and large businesses all across the world."
+          content="YourProductMatters specializes in offering services to medium-sized and large businesses all across the world."
         />
         <meta property="og:image" content="favicon.ico" />
         {/* <link rel="icon" href="/favicon.ico" /> */}

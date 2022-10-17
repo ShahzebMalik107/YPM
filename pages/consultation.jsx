@@ -12,7 +12,7 @@ const Contact_us = () => {
           <title>Schedule an appointment </title>
           <meta
             name="description"
-            content="As a full-service digital agency with a passion for ingenuity and innovation in every medium, Gubloo Technologies will continue to focus on expanding its digital expertise to bring you the best solutions."
+            content="As a full-service digital agency with a passion for ingenuity and innovation in every medium, YourProductMatters will continue to focus on expanding its digital expertise to bring you the best solutions."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
