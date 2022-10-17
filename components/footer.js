@@ -36,7 +36,7 @@ function Footer() {
                   </li>
 
                   <li>
-                    <Link href="/contact">Contact Us</Link>
+                    <Link href="/consultation">Get a free Consultation</Link>
                   </li>
                 </ul>
               </div>

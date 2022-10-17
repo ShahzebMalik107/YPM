@@ -145,13 +145,13 @@ function Header_v2() {
                 </Link>
               </li> */}
               <li className={style.btn +" btn btn-light"} >
-                <Link href={"/contact"}>
+                <Link href={"/consultation"}>
                   <a 
                     onClick={() => {
                       setActivemenu(5);
                     }}
                   >
-                    Get free consultation
+                    Get a free Consultation
                   </a>
                 </Link>
               </li>
@@ -190,7 +190,7 @@ function Header_v2() {
           </li>
           <li className={style.nav_item}>
             <Link href={"/about"}>
-              <a onClick={() => setmobileNav(!mobileNav)}>About us</a>
+              <a onClick={() => setmobileNav(!mobileNav)}>About</a>
             </Link>
           </li>
           {/* <li className={style.nav_item}>
@@ -199,8 +199,8 @@ function Header_v2() {
             </Link>
           </li> */}
           <li className={style.nav_item}>
-            <Link href={"/contact"}>
-              <a onClick={() => setmobileNav(!mobileNav)}>Contact Us</a>
+            <Link href={"/consultation"}>
+              <a onClick={() => setmobileNav(!mobileNav)}>Get a free Consultation</a>
             </Link>
           </li>
         </ul>
