@@ -1,20 +1,19 @@
 import { Fragment } from "react";
 import styles from "../styles/servicespage.module.css";
-import linewhite from "../components/utils/line-white";
 import Link from "next/link";
-import tech_service_img from "../public/static/tech-services.svg";
-import web_app_img from "../public/static/web-application-development.svg";
-import mobile_img from "../public/static/mobile-app.svg";
-import UIUX_img from "../public/static/UI-UX.svg";
-import graphic_design from "../public/static/Graphics-Design.png";
-import seo_img from "../public/static/seo.png"
+import tech_service_img from "../public/static/tech-services.png";
+import web_app_img from "../public/static/web-application-development.png";
+import mobile_img from "../public/static/mobile-app-d.png";
+import UIUX_img from "../public/static/UI-UX.png";
+import graphic_design from "../public/static/UI-UX.png";
+import seo_img from "../public/static/seo-s.png"
 import Image from "next/image";
 import Head from "next/head";
 const services = () => {
   return (
     <Fragment>
        <Head>
-        <title>Services at Gublootech</title>
+        <title>Services at YPM</title>
         <meta name="description" content="We work as an extension of you. Let's go on an imporvement journey, together." />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>

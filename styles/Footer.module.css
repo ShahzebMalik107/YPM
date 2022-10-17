@@ -10,7 +10,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 128px 0 0 0 ;
+    padding: 75px 0 0 0 ;
 }
 .footer_right {
     flex-basis: 50%;
@@ -18,9 +18,15 @@
 .footer_left{
     flex-basis: 40%;
 }
-
+.footer_inner p, .footer_inner a{
+    font-size: 16px;
+    line-height: 20px;
+}
+.footer_inner h2{
+    font-size: 16px;
+}
 .footer_logo {
-    max-width: 256px;
+    max-width: 96px;
     width: 100%;
 }
 
@@ -29,8 +35,8 @@
     margin: 14px 0 32px 0;
 }
 .social_images{
-    padding-top: 20px;
-    padding-bottom: 120px;
+    padding-top: 0px;
+    padding-bottom: 75px;
 }
 
 .social_images ul {
@@ -45,7 +51,9 @@
 .social_images ul li {
     margin-right: 32px;
 }
-
+.social_images ul li img{
+    max-width: 20px;
+}
 .service_links ul {
     padding: 0;
     list-style: none;

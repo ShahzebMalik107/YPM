@@ -78,7 +78,7 @@
 }
 
 .Slide_1 {
-    background-color: var(--primary_color);
+    background-color: var(--color-white);
     width: 100%;
     height: 100%;
     display: flex;
@@ -87,7 +87,7 @@
 }
 
 .Slide_2 {
-    background-color: #F7F7F7;
+    background-color: var(--not_so_white);
     width: 100%;
     height: 100%;
     display: flex;
@@ -96,7 +96,7 @@
 }
 
 .Slide_3 {
-    background-color: var(--secondary_color);
+    background-color: var(--washed_golden);
     width: 100%;
     height: 100%;
     display: flex;
@@ -105,7 +105,7 @@
 }
 
 .Slide_4 {
-    background-color: var(--royal_purple);
+    background-color: var(--secondary_color);
     width: 100%;
     height: 100%;
     display: flex;
@@ -114,7 +114,7 @@
 }
 
 .Slide_5 {
-    background-color: var(--washed_golden);
+    background-color: var(--primary_color);
     width: 100%;
     height: 100%;
     display: flex;
@@ -162,8 +162,8 @@
 }
 
 .Slider_col:nth-child(1) {
-    background-color: var(--primary_color);
-    color: var(--text_white);
+    background-color: var(--color-white);
+    color: var(--color_black);
 }
 
 .Slider_col:nth-child(2) {
@@ -173,18 +173,18 @@
 }
 
 .Slider_col:nth-child(3) {
-    background-color: var(--secondary_color);
+    background-color: var(--washed_golden);
     color: var(--slider_box_color);
 }
 
 .Slider_col:nth-child(4) {
-    background-color: var(--royal_purple);
+    background-color: var(--secondary_color );
     color: var(--text_white);
 }
 
 .Slider_col:nth-child(5) {
-    background-color: var(--washed_golden);
-    color: var(--slider_box_color);
+    background-color: var(--primary_color);
+    color: var(--text_white);
 }
 
 @media only screen and (max-width: 1024px) {

@@ -9,12 +9,11 @@ function Footer() {
       <div className="container">
         <div className={style.footer_inner}>
           <div className={style.footer_left}>
-            <img className={style.footer_logo} src="logo-white.png" alt="" />
+            <img className={style.footer_logo} src="logo-white.svg" alt="" />
             <Line />
             <p className={"paragraph light" + " " + style.footer_text}>
-              Your Product Matters is a full-service digital agency with a
-              passion for ingenuity and innovation in every medium, Your Product
-              Matters focuses on expanding its digital expertise to bring you
+              YourProductMatters Inc is a full-service digital agency with a
+              passion for ingenuity and innovation in every medium, YourProductMatters focuses on expanding its digital expertise to bring you
               the best solutions. We are happy and proud to have in our
               portfolio a large base of satisfied clients and success stories.
             </p>
@@ -29,7 +28,7 @@ function Footer() {
                   </li>
 
                   <li>
-                    <Link href="/team">Our team</Link>
+                    {/* <Link href="/team">Our team</Link> */}
                   </li>
 
                   <li>
@@ -70,7 +69,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className={style.social_images}>
+        {/* <div className={style.social_images}>
           <ul>
             <li>
               <a href="https://www.facebook.com/gublootechnologies/">
@@ -88,7 +87,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         {/* <hr className={style.footer_devider} /> */}
         {/* <h2 className="heading light">Contact</h2> */}
         {/* <Line /> */}
@@ -127,7 +126,7 @@ function Footer() {
         </div> */}
       </div>
       <div className={style.copyright}>
-        <p className="paragraph light">© All Rights Reserved</p>
+        <p className="paragraph light">©2022 YourProductMatters All Rights Reserved</p>
       </div>
     </footer>
   );

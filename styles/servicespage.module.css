@@ -9,7 +9,7 @@
     color: var(--primary_color);
 }
 .banner_section {
-    background-color: var(--not_so_white);
+    background-color: var(--washed_golden);
     padding: 150px 0;
     color: var(--color-black);
     background-repeat: no-repeat;
@@ -44,11 +44,11 @@
     padding: 150px 0;
 }
 .service_main_alt{
-    background-color: var(--not_so_white);
+    background-color: var(--washed_golden);
 }
 .contact_us{
     text-align: center;
-    background-color: var(--primary_color);
+    background-color: var(--secondary_color);
     padding: 100px 0;
 
 }

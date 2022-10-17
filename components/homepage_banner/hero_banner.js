@@ -4,7 +4,7 @@ import Script from "next/script";
 import { useState } from "react";
 import { Fragment } from "react";
 import Style from "../../styles/heroBanner.module.css";
-import mobile_img from "../../public/static/mobile-app.png"
+import mobile_img from "../../public/static/mobile-app-s.svg"
 
 const HeroBanner = () => {
   let innitalstate = 1;
@@ -32,14 +32,14 @@ const HeroBanner = () => {
               <div className="container">
                 <div className={Style.slider_item}>
                   <div className={Style.slider_text}>
-                    <h2 className="heading light">Web Development</h2>
-                    <p className="paragraph light">
+                    <h2 className="heading ">Web Development</h2>
+                    <p className="paragraph ">
                       Team of highly experienced web developers to help your
                       brand reach its full potential. Get more sales for your
                       business with the high quality and professional web
                       development experience.
                     </p>
-                    <button className="btn btn-Dark">
+                    <button className="btn btn-light">
                       <Link href={"/services#webdev"}>Learn more</Link>
                     </button>
                   </div>
@@ -109,9 +109,7 @@ const HeroBanner = () => {
                         " We are specialized in creating interactive and smooth UI/UX designs that provide a better user experience for your product. Making it user-friendly for consumers and competitive in the market."
                       }
                     </p>
-                    <button className="btn btn-light">
-                      <Link href={"/services#uiux"}>Learn more</Link>
-                    </button>
+                      <button className="btn btn-light"><Link href={"/services#uiux"}><a >Learn more</a></Link></button> 
                   </div>
                   <div className={Style.slider_img}>
                     <Image
@@ -144,7 +142,7 @@ const HeroBanner = () => {
                         "A good design influences the choices, decisions & buying behavior of customers. Our design team is highly experienced in creating the right set of designs and color combinations for your brand's success."
                       }{" "}
                     </p>
-                    <button className="btn btn-light">
+                    <button className="btn btn-Dark">
                       <Link href={"/services#graphic_design"}>Learn more</Link>
                     </button>
                   </div>
@@ -173,8 +171,8 @@ const HeroBanner = () => {
               <div className="container">
                 <div className={Style.slider_item}>
                   <div className={Style.slider_text}>
-                    <h2 className="heading">SEO and Digital Marketing</h2>
-                    <p className="paragraph">
+                    <h2 className="heading light">SEO and Digital Marketing</h2>
+                    <p className="paragraph light">
                       {
                         " Our digital marketers have expertise in creating unique social campaigns and efficient SEO plans to rank up your business or portfolios over search engines and social media platforms."
                       }

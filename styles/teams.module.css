@@ -12,6 +12,7 @@
 }
 .our_company {
   margin-bottom: 100px;
+  align-items: center;
 }
 
 .aml span {
@@ -21,8 +22,11 @@
 }
 
 .our_vission {
-  background-color: var(--secondary_color);
+  background-color: var(--washed_golden);
   padding: 50px 0;
+}
+.our_vission .flex{
+  align-items: center;
 }
 
 .team {

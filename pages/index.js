@@ -5,13 +5,13 @@ import Image from "next/image";
 import Line from "../components/utils/line";
 import { Fragment } from "react";
 import Link from "next/link";
-import InViewPoint from "../components/utils/InViewPoint";
+// import InViewPoint from "../components/utils/InViewPoint";
 
 export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>Your Product Matters</title>
+        <title>YourProductMatters</title>
         <meta
           name="description"
           content="GublooTech specializes in offering services to medium-sized and large businesses all across the world."
@@ -28,7 +28,7 @@ export default function Home() {
             <h2 className="heading">We Offer a Full Range of B2B Services!</h2>
             <Line />
             <h3 className="subheading">
-              Your product matters specializes in offering services to
+              YourProductMatters specializes in offering services to
               medium-sized and large businesses all across the world.
             </h3>
             <ul className={styles.list}>
@@ -41,8 +41,7 @@ export default function Home() {
               </li>
               <li>
                 <p className="paragraph">
-                  With a well coordinated unit of 70+ employees, Your product
-                  matters serves its customers globally regardless of their
+                  With a well coordinated unit of 70+ employees, YourProductMatters serves its customers globally regardless of their
                   geographical region, operational domain and organizational
                   fine-points.
                 </p>
@@ -72,7 +71,7 @@ export default function Home() {
               <h2 className="heading">Who We are</h2>
               <Line />
               <p className="paragraph">
-                Your product matters is a one-stop shop for contemporary
+                YourProductMatters is a one-stop shop for contemporary
                 web/mobile development projects! Our team comprises a talent
                 pool that aims to build complex designs schematically. We
                 possess a great track record of understanding client needs
@@ -149,112 +148,6 @@ export default function Home() {
             <Image src={"/industries/grocery.jpg"} height={64} width={64} />
             <p className="small_heading">Grocery</p>
           </div>
-        </div>
-      </section>
-      {/* Feactured Services */}
-      <section
-        id="feactured_services"
-        className={styles.feactured_services + " padding-100"}
-      >
-        {/* <div className="container">
-          <div className={styles.we_server_heading}>
-            <h2 className="heading">Registered With</h2>
-            <Line />
-          </div>
-          <p
-            className={
-              styles.feactured_services_paragraph + " paragraph center"
-            }
-          >
-            {
-              // "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam "
-            }
-          </p>
-        </div> */}
-        <InViewPoint tract_ID={"feactured_services"} />
-        <div id="target_item">
-          <div>
-            <div id="object-1" className={styles.object_image}>
-              <Image
-                src={"/static/object1.svg"}
-                className={styles.image}
-                layout="fill"
-              />
-            </div>
-            <div id="object-2" className={styles.object_image}>
-              <Image
-                src={"/static/object2.svg"}
-                className={styles.image}
-                layout="fill"
-              />
-            </div>
-          </div>
-        </div>
-        <div className={styles.service_list + " container"}>
-          {/* <div className={styles.service_list_items}>
-            <Link href={"https://icci.com.pk/"}>
-              <a target={"_blank"}>
-                <Image src={"/services/ICCI.png"} height={176} width={176} />
-                <h3 className="small_heading ">ICCI </h3>
-              </a>
-            </Link>
-          </div> */}
-          {/* <div className={styles.service_list_items}>
-            <Link href={"https://eservices.secp.gov.pk/"}>
-              <a target={"_blank"}>
-                <Image src={"/services/SECP.png"} height={176} width={176} />
-                <h3 className="small_heading ">SECP</h3>
-              </a>
-            </Link>
-          </div> */}
-
-          {/* <div className={styles.service_list_items}>
-            <Link href={"https://www.pasha.org.pk/"}>
-              <a target={"_blank"}>
-                <Image src={"/services/P@SHA.png"} height={176} width={176} />
-                <h3 className="small_heading ">P@SHA</h3>
-                {/* <p className="paragraph center">
-              Wordpress, ASP.NET, Node JS, Php etc
-            </p> */}
-          {/* </a> 
-            </Link>
-          </div> */}
-
-          {/* <div className={styles.service_list_items}>
-            <Link href={"https://techdestination.com/"}>
-              <a target={"_blank"}>
-                <Image src={"/services/PSEB.png"} height={176} width={176} />
-                <h3 className="small_heading ">PSEB</h3>
-                {/* <p className="paragraph center">
-              Wordpress, ASP.NET, Node JS, Php etc
-            </p> */}
-          {/* </a>
-            </Link>
-          </div> */}
-        </div>
-      </section>
-      {/* Testimonials */}
-      <section className={styles.Testimonials + " padding-100"}>
-        <div className="container">
-          {" "}
-          <div className={styles.we_server_heading}>
-            <h2 className="heading light">What people say about us?</h2>
-            <Line />
-          </div>
-          {/* <p
-            className={
-              styles.feactured_services_paragraph + " paragraph center"
-            }
-          >
-            {
-              "The customer's perception is our reality."
-            }
-          </p> */}
-          <button className="btn btn-Dark btn-center">
-            <Link href={"/testimonials"}>
-              <a>Testimonials</a>
-            </Link>
-          </button>
         </div>
       </section>
       {/* Careers */}

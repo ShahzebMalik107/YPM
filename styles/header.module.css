@@ -17,15 +17,22 @@
     padding: 10px 0;
     position: relative;
 }
+.header_main >div{
+    align-items: center;
+}
 .logo {
     flex-basis: 10% !important;
 }
 .nav ul {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 .nav ul li{
     padding: 0 28px;
+}
+.btn{
+    margin: 0 !important;
 }
 
 .nav_item a {

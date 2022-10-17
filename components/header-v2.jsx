@@ -41,7 +41,7 @@ function Header_v2() {
               <a  onClick={() => {
                       setActivemenu(1);
                     }}>
-                <img src="logo.png" alt="logo" />
+                <img src="logo.svg" alt="logo" />
               </a>
             </Link>
           </div>
@@ -135,7 +135,7 @@ function Header_v2() {
                       setActivemenu(4);
                     }}
                   >
-                    About us
+                    About
                   </a>
                 </Link>
               </li>
@@ -144,20 +144,14 @@ function Header_v2() {
                   <a>Careers</a>
                 </Link>
               </li> */}
-              <li
-                className={
-                  Activemenu === 5
-                    ? style.nav_item + " " + style.nav_item_active
-                    : style.nav_item
-                }
-              >
+              <li className={style.btn +" btn btn-light"} >
                 <Link href={"/contact"}>
-                  <a
+                  <a 
                     onClick={() => {
                       setActivemenu(5);
                     }}
                   >
-                    Contact Us
+                    Get free consultation
                   </a>
                 </Link>
               </li>

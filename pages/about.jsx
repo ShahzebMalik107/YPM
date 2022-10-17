@@ -6,8 +6,8 @@ export default function team() {
   return (
     <div className={styles.team}>
        <Head>
-        <title>About Gublootech</title>
-        <meta name="description" content="Your product matters is a one-stop-shop. We are a web design and development company with the expertise to build the next generation of your website." />
+        <title>About YPM</title>
+        <meta name="description" content="YourProductMatters is a one-stop-shop. We are a web design and development company with the expertise to build the next generation of your website." />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <div className={styles.about_heading}>
@@ -20,7 +20,7 @@ export default function team() {
           <p className="paragraph">
             From fresh, visually appealing web design and custom application
             development to search engine optimization and social media
-            management, Your product matters is a one-stop-shop. We are a web
+            management, YourProductMatters is a one-stop-shop. We are a web
             design and development company with the expertise to build the next
             generation of your website. We work hard to understand what you want
             your site to do, and we create it for you exactly as you envisioned.
@@ -39,7 +39,7 @@ export default function team() {
             <h2 className="subheading">Our Vision</h2>
             <p className="paragraph">
               As a full-service digital agency with a passion for ingenuity and
-              innovation in every medium, Your product matters will continue to
+              innovation in every medium, YourProductMatters will continue to
               focus on expanding its digital expertise to bring you the best
               solutions. We are happy and proud to have in our portfolio a large
               base of satisfied clients and success stories.
