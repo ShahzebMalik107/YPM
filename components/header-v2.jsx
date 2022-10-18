@@ -193,7 +193,7 @@ function Header_v2() {
               <a>Careers</a>
             </Link>
           </li> */}
-          <li className={style.nav_item}>
+          <li className={style.nav_item+" "+style.nav_btn}>
             <Link href={"/consultation"}>
               <a onClick={() => setmobileNav(!mobileNav)}>Get a free Consultation</a>
             </Link>

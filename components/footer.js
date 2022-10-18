@@ -126,7 +126,7 @@ function Footer() {
         </div> */}
       </div>
       <div className={style.copyright}>
-        <p className="paragraph light">©2022 YourProductMatters All Rights Reserved</p>
+        <p className="paragraph light">©2022 YourProductMatters Inc All Rights Reserved</p>
       </div>
     </footer>
   );

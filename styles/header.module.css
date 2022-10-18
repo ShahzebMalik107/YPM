@@ -28,6 +28,10 @@
     list-style: none;
     align-items: center;
 }
+.nav_btn{
+    border: solid 1px #fff;
+    padding: 10px 15px !important;
+}
 .nav ul li{
     padding: 0 28px;
 }
