@@ -184,11 +184,6 @@ function Header_v2() {
             </Link>
           </li>
           <li className={style.nav_item}>
-            <Link href={"/team"}>
-              <a onClick={() => setmobileNav(!mobileNav)}>Our team</a>
-            </Link>
-          </li>
-          <li className={style.nav_item}>
             <Link href={"/about"}>
               <a onClick={() => setmobileNav(!mobileNav)}>About</a>
             </Link>
