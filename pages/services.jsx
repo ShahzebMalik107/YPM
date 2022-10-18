@@ -267,8 +267,8 @@ const services = () => {
         <div className="container">
           <h2 className="subheading light">You got the idea we have the expertise</h2>
           <linewhite />
-          <Link href={"/contact"}>
-            <a className="btn-Dark">Contact Us</a>
+          <Link href={"/consultation"}>
+            <a className="btn-Dark">Get a free Consultation</a>
           </Link>
         </div>
       </section>
