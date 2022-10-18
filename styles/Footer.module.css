@@ -140,4 +140,18 @@
     .footer_right{
         grid-template-columns:  repeat(1, 1fr);
     }
+    .service_links ul {
+        padding: 0;
+        list-style: none;
+        margin: 10px 0 0 0;
+    }    
+    .copyright {
+        margin-top: 30px;
+    }
+    .service_links ul li{
+        margin-bottom: 5px;
+    }
+    .footer_right{
+        gap: 20px
+    }
 }
