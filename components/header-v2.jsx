@@ -29,7 +29,7 @@ function Header_v2() {
 
 
   return (
-    <header className={style.header}>
+    <header id="header" className={style.header}>
       <Head>
         <title>Gubloo</title>
       </Head>

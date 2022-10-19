@@ -5,7 +5,7 @@ import Line from "./utils/line";
 
 function Footer() {
   return (
-    <footer className={style.footer}>
+    <footer id="footer" className={style.footer}>
       <div className="container">
         <div className={style.footer_inner}>
           <div className={style.footer_left}>
