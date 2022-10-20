@@ -13,6 +13,7 @@
     background-image: url("/landingpage/banner_background.png");
     background-repeat:no-repeat ;
     background-size: cover;
+    margin-bottom: 120px;
 
 }
 .banner_inner,.landing_inner_content{
@@ -24,6 +25,7 @@
 }
 .landing_inner_content{
     padding: 50px 15px;
+    flex-wrap: wrap;
 }
 .landing_inner_img
 {
@@ -33,9 +35,10 @@
     flex-basis: 45%;
 }
 .fb3{
-    min-width: 380px;
+    min-width: 275px;
     flex-basis: 28%;
-    padding-right: 15px;
+    padding-right: 25px;
+    margin-bottom: 25px;
 }
 .white{
     color: white;
@@ -60,6 +63,9 @@
 .size_14{
     font-size: 14px;
 }
+.list_style{
+    padding-left: 18px;
+}
 .list_style li::marker {
     color: #A387BC;
 }
@@ -73,3 +79,48 @@
     margin: 20px auto 0;
     border: 0.5px solid #A387BC60;
 }
+
+@media only screen and (max-width: 1024px) {
+    .size_58
+    {
+        font-size: 36px;
+    }
+    .calendly-inline-widget {
+        height: 700px !important;
+    }
+    .banner_inner{
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .banner_inner{
+        flex-wrap: wrap;
+    }
+    .banner_inner .fb2{
+        flex-basis: 100%;
+    }
+    .banner_sec{
+        margin-bottom: 270px;
+    
+    }
+    .fb3{
+        flex-basis: 45%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .fb3{
+        flex-basis: 100%;
+    }
+    .list_img{
+        text-align: center;
+    }
+    .purple{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .banner_sec{
+        margin-bottom: 320px;
+    }
+}
+

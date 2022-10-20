@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
       {showHeader && <Header_v2 />}
       {loading && <Loader />}
       <Component {...pageProps} />
-      {showHeader &&<Footer />}
+      {showHeader && <Footer />}
     </Fragment>
   );
 }
