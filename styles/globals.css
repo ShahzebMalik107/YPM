@@ -514,6 +514,9 @@ a {
     .heading {
         font-size: 35px;
     }
+    #landing-page .calendly-inline-widget {
+        height: 735px !important;
+    }
 }
 @media only screen and (max-width: 500px) {
     #landing-page .calendly-inline-widget {

@@ -13,14 +13,15 @@
     background-image: url("/landingpage/banner_background.png");
     background-repeat:no-repeat ;
     background-size: cover;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 
 }
 .banner_inner,.landing_inner_content{
-    max-width: 1670px;
+    max-width: 1390px;
     margin: 0 auto;
     padding: 25px 15px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .landing_inner_content{
@@ -78,6 +79,13 @@
     width: 80%;
     margin: 20px auto 0;
     border: 0.5px solid #A387BC60;
+}
+.banner_p{
+    margin: 0;
+}
+.banner_h2{
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 1024px) {

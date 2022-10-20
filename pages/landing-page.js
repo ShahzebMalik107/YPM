@@ -26,14 +26,15 @@ const landing_page = () => {
             <div className={styles.banner_sec}>
                 <div className={styles.banner_inner}>
                     <div className={`${styles.white} ${styles.fb2} ${styles.text_sec}`}>
-                        <h2 className={styles.size_58}>Book amazing meeting venues & Conference in minutes</h2>
-                        <p className={styles.size_18}>Our stylish hotels offer small meeting rooms to large banquet sized function rooms. Book online today.</p>
+                        <h2 className={`${styles.size_58} ${styles.banner_h2}`}>Schedule a free appointment with <br/>our Experts</h2>
+                        <p className={`${styles.size_18} ${styles.banner_p}`}>You're not just another client, <strong>YOU MATTER.</strong><br/>
+                            Your Product Matters</p>
                     </div>
                     <div className={styles.fb2}>
                     <div
                     className={"calendly-inline-widget"}
                     data-url="https://calendly.com/yourproductmatters/consultation?hide_event_type_details=1"
-                    style={{ "min-width": "320px", height: "930px" }}
+                    style={{ "min-width": "320px", height: "600px" }}
                 ></div>
                 <Script
                     type="text/javascript"
