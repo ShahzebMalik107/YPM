@@ -5,6 +5,7 @@ import Image from "next/image";
 import Line from "../components/utils/line";
 import { Fragment } from "react";
 import Link from "next/link";
+import Gtag from "../components/gtag/gtag";
 // import InViewPoint from "../components/utils/InViewPoint";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       {/* Hero Banner */}
+      <Gtag></Gtag>
       <HeroBanner />
       {/* We Offer a Full Range of B2B Service */}
       <section className={styles.b2b + " " + "container"}>

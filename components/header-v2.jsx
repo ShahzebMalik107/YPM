@@ -2,45 +2,45 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Script from "next/script";
 import { useState } from "react";
 import style from "../styles/header.module.css";
+import Gtag from "./gtag/gtag";
 function Header_v2() {
   const [mobileNav, setmobileNav] = useState(false);
-  const [Activemenu, setActivemenu] = useState(()=>{
+  const [Activemenu, setActivemenu] = useState(() => {
     const location = useRouter();
     const url = location.pathname;
     if (url === "/") {
-      return(1);
-    }
-    else if(url === "/services"){
-      return(2)
-    }
-    else if(url === "/team"){
-      return(3)
-    }
-    else if(url==="/about"){
-      return(4)
-    }
-    else if(url==="/contact"){
-      return(5)
+      return 1;
+    } else if (url === "/services") {
+      return 2;
+    } else if (url === "/team") {
+      return 3;
+    } else if (url === "/about") {
+      return 4;
+    } else if (url === "/contact") {
+      return 5;
     }
     console.log(url);
   });
 
-
   return (
     <header id="header" className={style.header}>
+      <Gtag></Gtag>
       <Head>
-        <title>Gubloo</title>
+        <title>YPM</title>
       </Head>
 
       <div className={style.header_main}>
         <div className={"container flex"}>
           <div className={style.logo}>
             <Link href="/">
-              <a  onClick={() => {
-                      setActivemenu(1);
-                    }}>
+              <a
+                onClick={() => {
+                  setActivemenu(1);
+                }}
+              >
                 <img src="logo.svg" alt="logo" />
               </a>
             </Link>
@@ -144,9 +144,9 @@ function Header_v2() {
                   <a>Careers</a>
                 </Link>
               </li> */}
-              <li className={style.btn +" btn btn-light"} >
+              <li className={style.btn + " btn btn-light"}>
                 <Link href={"/consultation"}>
-                  <a 
+                  <a
                     onClick={() => {
                       setActivemenu(5);
                     }}
@@ -193,9 +193,11 @@ function Header_v2() {
               <a>Careers</a>
             </Link>
           </li> */}
-          <li className={style.nav_item+" "+style.nav_btn}>
+          <li className={style.nav_item + " " + style.nav_btn}>
             <Link href={"/consultation"}>
-              <a onClick={() => setmobileNav(!mobileNav)}>Get a free Consultation</a>
+              <a onClick={() => setmobileNav(!mobileNav)}>
+                Get a free Consultation
+              </a>
             </Link>
           </li>
         </ul>
