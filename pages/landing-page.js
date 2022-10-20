@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../styles/landingpage.module.css";
 import Link from "next/link";
+import Script from 'next/script';
 
 
 
@@ -19,13 +20,16 @@ const landing_page = () => {
                     <p className={styles.size_18}>Our stylish hotels offer small meeting rooms to large banquet sized function rooms. Book online today.</p>
                 </div>
                 <div className={styles.fb2}>
-                    {/* <div class="calendly-inline-widget" style={{
-                        "min-width":"320px",
-                        "height": "700px"
-                    }} data-auto-load="false">
-                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-                        <script src='calenderly.js' />
-                    </div> */}
+                <div
+                className="calendly-inline-widget"
+                data-url="https://calendly.com/yourproductmatters/consultation?hide_event_type_details=1"
+                style={{ "min-width": "320px", height: "930px" }}
+              ></div>
+              <Script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></Script>
 
                 </div>
             </div>
