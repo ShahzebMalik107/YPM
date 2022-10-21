@@ -518,10 +518,15 @@ a {
         height: 735px !important;
     }
 }
+@media only screen and (max-width: 690px) {
+    #landing-page .calendly-inline-widget {
+        box-shadow: 0 10px 20px #00000030;
+    }
+
+}
 @media only screen and (max-width: 500px) {
     #landing-page .calendly-inline-widget {
         height: 630px !important;
-        box-shadow: 0 10px 20px #00000030;
     }
 }
 

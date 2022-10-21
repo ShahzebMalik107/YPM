@@ -27,7 +27,7 @@ const landing_page = () => {
                 <div className={styles.banner_inner}>
                     <div className={`${styles.white} ${styles.fb2} ${styles.text_sec}`}>
                         <h2 className={`${styles.size_58} ${styles.banner_h2}`}>Schedule a free appointment with <br/>our Experts</h2>
-                        <p className={`${styles.size_18} ${styles.banner_p}`}>You're not just another client, <strong>YOU MATTER.</strong><br/>
+                        <p className={`${styles.size_18} ${styles.banner_p}`}>You're not just another client, <strong className={styles.banner_blue}>YOU MATTER.</strong><br/>
                             Your Product Matters</p>
                     </div>
                     <div className={styles.fb2}>
