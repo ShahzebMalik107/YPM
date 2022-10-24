@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 import styles from "../styles/landingpage.module.css";
-import Link from "next/link";
+// import Link from "next/link";
 import Script from "next/script";
 import Head from "next/head";
-import Mailchimp from "../components/mailchimp/mailchimp";
+// import Mailchimp from "../components/mailchimp/mailchimp";
+import Customform from "../components/mailchimp/customform";
 
 const landing_page = () => {
   return (
@@ -48,7 +49,8 @@ const landing_page = () => {
               ></Script>
               </div>
               <div  style={{display: "none"}} className="mailchimp">
-                <Mailchimp></Mailchimp>
+                {/* <Mailchimp></Mailchimp> */}
+                <Customform/>
               </div>
             </div>
           </div>
