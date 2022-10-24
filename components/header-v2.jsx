@@ -27,9 +27,9 @@ function Header_v2() {
 
   return (
     <header id="header" className={style.header}>
-      <Gtag></Gtag>
       <Head>
         <title>YPM</title>
+       
       </Head>
 
       <div className={style.header_main}>
