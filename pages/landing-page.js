@@ -3,6 +3,7 @@ import styles from "../styles/landingpage.module.css";
 import Link from "next/link";
 import Script from "next/script";
 import Head from "next/head";
+import Mailchimp from "../components/mailchimp/mailchimp";
 
 const landing_page = () => {
   return (
@@ -34,7 +35,8 @@ const landing_page = () => {
               </p>
             </div>
             <div className={styles.fb2}>
-              <div
+              <div style={{display: "block"}} className="calenderly">
+                <div
                 className={"calendly-inline-widget"}
                 data-url="https://calendly.com/yourproductmatters/consultation?hide_event_type_details=1"
                 style={{ "min-width": "320px", height: "600px" }}
@@ -44,6 +46,10 @@ const landing_page = () => {
                 src="https://assets.calendly.com/assets/external/widget.js"
                 async
               ></Script>
+              </div>
+              <div  style={{display: "none"}} className="mailchimp">
+                <Mailchimp></Mailchimp>
+              </div>
             </div>
           </div>
         </div>

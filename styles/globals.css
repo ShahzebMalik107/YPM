@@ -447,6 +447,42 @@ a {
         width: 0px;
     }
 }
+/* Mailchimp css */
+.mailchimp {
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 5px !important;
+    box-shadow: #00000028 1px 1px 20px 7px;
+}
+#mc_embed_signup {
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    max-width: 600px;
+}
+/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+#mc_embed_signup div#mce-responses {
+    float: none !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: space-between !important;
+    width: 100% !important;
+}
+#mc_embed_signup input{
+    background-color: #fff;
+    border: 0 !important ;
+    border-bottom: 2px solid var(--primary_color) !important;
+    border-radius: 0 !important;
+}
+#mc_embed_signup input:focus-visible {
+    outline: none;
+}
+#mc-embedded-subscribe{
+    background-color: var(--primary_color) !important;
+}
+#mc-embedded-subscribe:hover{
+    background-color: #A387BC !important;
+}
 
 @media only screen and (max-width: 1024px) {
     .container {
