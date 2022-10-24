@@ -2,8 +2,8 @@
     --primary_color: #2a2441;
     --secondary_color: #a387bc;
     --royal_purple: #6356ed;
-    --washed_golden: #DAEAF8;
-    --not_so_white: #EAEAEA;
+    --washed_golden: #daeaf8;
+    --not_so_white: #eaeaea;
     --text_color: #462c2b;
     --text_white: #fff;
     --slider_box_color: #231615;
@@ -484,9 +484,8 @@ a {
     .paragraph-right {
         text-align: right;
     }
-    
 }
-@media only screen and (max-width: 1024px) and (min-width:769px) {
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
     #landing-page .calendly-inline-widget {
         height: 650px !important;
     }
@@ -522,11 +521,14 @@ a {
     #landing-page .calendly-inline-widget {
         box-shadow: 0 10px 20px #00000030;
     }
-
 }
 @media only screen and (max-width: 500px) {
     #landing-page .calendly-inline-widget {
         height: 630px !important;
+    }
+
+    #mc-field-group {
+        flex-basis: 100% !important;
     }
 }
 
