@@ -6,6 +6,7 @@ import Router from "next/router";
 import { useRouter } from "next/router";
 import Loader from "../components/loader/loader";
 import Head from "next/head";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -37,12 +38,36 @@ function MyApp({ Component, pageProps }) {
         `
           }}
         />
+
+        {/* Google Tag manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-NBMDHLJ');
+          `
+          }}
+        ></script>
+        {/* End of google tag manager */}
         {/* Google optimize  */}
         <script
           src="https://www.googleoptimize.com/optimize.js?id=OPT-W9B5TFC"
           dangerouslySetInnerHTML={{ __html: `` }}
         />
       </Head>
+      {/* <!-- Google Tag Manager (noscript) --> */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NBMDHLJ"
+          height="0"
+          width="0"
+          style={{"display":"none","visibility":"hidden"}}
+        ></iframe>
+      </noscript>
+      {/* <!-- End Google Tag Manager (noscript) --> */}
       {showHeader && <Header_v2 />}
       {loading && <Loader />}
       <Component {...pageProps} />
