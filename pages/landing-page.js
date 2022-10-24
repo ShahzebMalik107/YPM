@@ -112,7 +112,7 @@ const landing_page = () => {
                 </Link>
                 <hr className={styles.footer_hr}/>
                 <p className={styles.size_14}>
-                MeetingRooms @ 2015 copyrights all reserved
+                yourproductmatters @ 2022 copyrights all reserved
                 </p>
             </div>
         </div>
