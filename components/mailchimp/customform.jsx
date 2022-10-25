@@ -143,7 +143,7 @@ const Customform = () => {
         </p>
       </form>
       <Script src="https://www.google.com/recaptcha/api.js" />
-      <Script src="https://www.google.com/recaptcha/api.js?render=6LcAaN8hAAAAACBL1sAynDE0uyAY9DYesIe4bquo" />
+      <Script src="https://www.google.com/recaptcha/api.js?render=6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu" />
       <Script src="contactpage.js" />
     </Fragment>
   );
