@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     setLoading(false);
   });
   const router = useRouter();
-  const showHeader = router.pathname === "/landing-page" ? false : true;
+  const showHeader = router.pathname === "/schedule-an-appointment" ? false : true;
   return (
     <Fragment>
       <Head>
