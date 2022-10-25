@@ -88,6 +88,11 @@ const landing_page = () => {
                 className={styles.landing_inner_img}
                 src="/landingpage/second.png"
                 alt="logo"
+                style={{
+                  width: "150px", 
+                  height: "145px",
+                  "object-fit":"contain" 
+                }}
               />
             </div>
             <h3 className={`${styles.size_24} ${styles.purple}`}>
