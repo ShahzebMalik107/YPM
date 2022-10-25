@@ -1,11 +1,11 @@
 import React, { Fragment, useState } from "react";
 import axios from "axios";
+import Script from "next/script";
 // import style from "../../styles/module.customform.css"
 const Customform = () => {
-  const [FirstName, setFirstName] = useState("");
+  const [FullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneno, setphoneno] = useState("");
-  const [LastName, setLastName] = useState("");
   const [message, setmessage] = useState("");
   const [Loadingstate, setLoadingstate] = useState(false);
   const [MessageSend, setMessageSend] = useState(false);
@@ -14,10 +14,9 @@ const Customform = () => {
     event.preventDefault();
     setLoadingstate(true);
     let formData = new FormData();
-    formData.set("first-name", FirstName);
+    formData.set("Full-name", FullName);
     formData.set("your-email", email);
     formData.set("phone-no", phoneno);
-    formData.set("last-name", LastName);
     formData.set("your-subject", message);
     console.log(FormData);
     axios
@@ -50,50 +49,39 @@ const Customform = () => {
   return (
     <Fragment>
       <form id="form" onSubmit={onSubmitHandler}>
-        <h2>Schedule a call with our experts</h2>
         <div>
           <label className={"form_label"} htmlFor="full-name">
-            First Name<span className={"form_label_sterik"}>*</span>
+            Full Name
+            <span style={{ color: "red" }} className={"form_label_sterik"}>
+              *
+            </span>
           </label>
           <input
             className={"form_input"}
             type="text"
             name="full-name"
             id="full-name"
-            placeholder="John"
+            placeholder="John Doe"
             onChange={(e) => {
-              setFirstName(e.target.value);
+              setFullName(e.target.value);
             }}
             required
           />
         </div>
-        <div>
-          <label className={"form_label"} htmlFor="full-name">
-            Last Name<span className={"form_label_sterik"}>*</span>
-          </label>
-          <input
-            className={"form_input"}
-            type="text"
-            name="Last-name"
-            id="last-name"
-            placeholder="Doe"
-            onChange={(e) => {
-              setLastName(e.target.value);
-            }}
-            required
-          />
-        </div>
+
         <div>
           <label className={"form_label"} htmlFor="email">
             Email Address
-            <span className={"form_label_sterik"}>*</span>
+            <span style={{ color: "red" }} className={"form_label_sterik"}>
+              *
+            </span>
           </label>
           <input
             className={"form_input"}
             type="email"
             name="email"
             id="email"
-            placeholder="abc@yourproductmatters"
+            placeholder="abc@xyz.com"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
@@ -102,17 +90,26 @@ const Customform = () => {
         </div>
         <div>
           <label className={"form_label"} htmlFor="phone-no">
-            Phone No.<span className={"form_label_sterik"}>*</span>
+            Phone No.
+            <span style={{ color: "red" }} className={"form_label_sterik"}>
+              *
+            </span>
           </label>
           <input
             className={"form_input"}
             type="tel"
             name="phone-no"
             id="phone-no"
-            placeholder="000.000.0000"
-            onChange={(e) => {
+            placeholder="(000) 000 0000"
+            onInput={(e) => {
+              var phonenumber = e.target.value.toString();
+              var checkregx = /^([0-9]{1,14})$/.test(phonenumber);
+              if (!checkregx) {
+                e.target.value = phonenumber.slice(0, -1);
+              }
               setphoneno(e.target.value);
             }}
+            required
           />
         </div>
 
@@ -120,21 +117,24 @@ const Customform = () => {
           <label className={"form_label"} htmlFor="message">
             Please tell us more about your product/idea
           </label>
-          <input
-            type={"text"}
+          <textarea
+            style={{
+              width: "100%"
+            }}
             className={"form_input"}
             name="message"
             id="message"
+            rows={5}
             placeholder="This will help prepare for our meeting"
             onChange={(e) => {
               setmessage(e.target.value);
             }}
-          ></input>
-          <small>This will help prepare for our meeting</small>
+          ></textarea>
         </div>
         {/* <div className="recaptcha" data-sitekey="6LcAaN8hAAAAACBL1sAynDE0uyAY9DYesIe4bquo"></div> */}
         <button
-          data-sitekey="6LcAaN8hAAAAACBL1sAynDE0uyAY9DYesIe4bquo"
+          className={"g-recaptcha"}
+          data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"
           data-callback="onSubmit"
           data-action="submit"
           id="submit-form"
@@ -145,6 +145,9 @@ const Customform = () => {
           {MessageSend ? "Thank you for your message. It has been sent." : ""}
         </p>
       </form>
+      <Script src="https://www.google.com/recaptcha/api.js" />
+      <Script src="https://www.google.com/recaptcha/api.js?render=6LcAaN8hAAAAACBL1sAynDE0uyAY9DYesIe4bquo" />
+      <Script src="contactpage.js" />
     </Fragment>
   );
 };

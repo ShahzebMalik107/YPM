@@ -490,11 +490,15 @@ form#form {
     padding: 20px;
 }
 
-#form input {
+#form input, #form textarea {
     width: 100%;
     border: none;
     border-bottom: solid 2px #a387bc;
     margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+#form textarea{
+    border: solid 2px #a387bc;
 }
 
 #form label {
