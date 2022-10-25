@@ -1,5 +1,5 @@
-function onSubmit(token) {
-  document.getElementById("form").submit();
+// function onSubmit(token) {
+//   document.getElementById("form").submit();
   
-}
-console.log("loaded")
+// }
+// console.log("loaded")

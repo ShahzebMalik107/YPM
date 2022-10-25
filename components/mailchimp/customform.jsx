@@ -1,6 +1,9 @@
 import React, { Fragment, useState } from "react";
 import axios from "axios";
 import Script from "next/script";
+import {load } from 'recaptcha-v3'
+
+
 // import style from "../../styles/module.customform.css"
 const Customform = () => {
   const [FullName, setFullName] = useState("");
@@ -12,6 +15,14 @@ const Customform = () => {
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
+
+    console.log('recapthca :>> ');
+    const recaptcha =await load('6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu')
+    const token = await recaptcha.execute()
+
+    console.log('token :>> ', token);
+
+    console.log('form submitted...')
     setLoadingstate(true);
     let formData = new FormData();
     formData.set("Full-name", FullName);
@@ -19,6 +30,9 @@ const Customform = () => {
     formData.set("phone-no", phoneno);
     formData.set("your-subject", message);
     console.log(FormData);
+
+    console.log('Calling the api...')
+
     axios
       .post(
         "https://backend.gublootechnologies.com/wp-json/contact-form-7/v1/contact-forms/475/feedback/",
@@ -130,28 +144,21 @@ const Customform = () => {
         </div>
         {/* <div className="recaptcha" data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"></div> */}
         <button
-          className={"g-recaptcha"}
-          data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"
-          data-callback='onSubmit' 
-          data-action='submit'
+          
+         
           id="submit-form"
           type="submit"
+          
         >
           {!Loadingstate ? "Send" : "Sending ..."}
         </button>
+
+        {/* <button type="button" onClick={(e) => openRecaptcha(e)}>Recaptcha</button> */}
         <p>
           {MessageSend ? "Thank you for your message. It has been sent." : ""}
         </p>
       </form>
-      <Script src="https://www.google.com/recaptcha/api.js" />
-      {/* <Script src="https://www.google.com/recaptcha/api.js?render=6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu" /> */}
-      {/* <Script src="contactpage.js" /> */}
-      <Script dangerouslySetInnerHTML={{__html: `
-        function onSubmit(token, event) {
-          event.preventDefault();
-          document.getElementById("form").submit();
-        }
-      `}} />
+  
     </Fragment>
   );
 };

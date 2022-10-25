@@ -14,6 +14,7 @@ const landing_page = () => {
           name="description"
           content="YourProductMatters specializes in offering services to medium-sized and large businesses all across the world."
         />
+        <title>Schedule an Appointment-YourProductMatters</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
