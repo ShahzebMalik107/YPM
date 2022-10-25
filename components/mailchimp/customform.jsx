@@ -100,13 +100,10 @@ const Customform = () => {
             type="tel"
             name="phone-no"
             id="phone-no"
-            placeholder="(000) 000 0000"
+            placeholder="(000) 000-0000"
             onInput={(e) => {
-              var phonenumber = e.target.value.toString();
-              var checkregx = /^([0-9]{1,14})$/.test(phonenumber);
-              if (!checkregx) {
-                e.target.value = phonenumber.slice(0, -1);
-              }
+              var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+              e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
               setphoneno(e.target.value);
             }}
             required
