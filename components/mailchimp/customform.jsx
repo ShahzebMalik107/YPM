@@ -131,9 +131,9 @@ const Customform = () => {
         {/* <div className="recaptcha" data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"></div> */}
         <button
           className={"g-recaptcha"}
-          data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"
-          data-callback="onSubmit"
-          data-action="submit"
+          data-sitekey="reCAPTCHA_6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"
+          data-callback='onSubmit' 
+          data-action='submit'
           id="submit-form"
           type="submit"
         >
@@ -144,8 +144,14 @@ const Customform = () => {
         </p>
       </form>
       <Script src="https://www.google.com/recaptcha/api.js" />
-      <Script src="https://www.google.com/recaptcha/api.js?render=6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu" />
-      <Script src="contactpage.js" />
+      {/* <Script src="https://www.google.com/recaptcha/api.js?render=6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu" /> */}
+      {/* <Script src="contactpage.js" /> */}
+      <Script dangerouslySetInnerHTML={{__html: `
+        function onSubmit(token, event) {
+          event.preventDefault();
+          document.getElementById("form").submit();
+        }
+      `}} />
     </Fragment>
   );
 };
