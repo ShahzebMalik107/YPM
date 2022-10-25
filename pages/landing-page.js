@@ -36,21 +36,21 @@ const landing_page = () => {
               </p>
             </div>
             <div className={styles.fb2}>
-              <div style={{display: "block"}} className="calenderly">
+              <div style={{ display: "block" }} className="calenderly">
                 <div
-                className={"calendly-inline-widget"}
-                data-url="https://calendly.com/yourproductmatters/consultation?hide_event_type_details=1"
-                style={{ "min-width": "320px", height: "600px" }}
-              ></div>
-              <Script
-                type="text/javascript"
-                src="https://assets.calendly.com/assets/external/widget.js"
-                async
-              ></Script>
+                  className={"calendly-inline-widget"}
+                  data-url="https://calendly.com/yourproductmatters/consultation?hide_event_type_details=1"
+                  style={{ "min-width": "320px", height: "600px" }}
+                ></div>
+                <Script
+                  type="text/javascript"
+                  src="https://assets.calendly.com/assets/external/widget.js"
+                  async
+                ></Script>
               </div>
-              <div  style={{display: "none"}} className="mailchimp">
+              <div style={{ display: "none" }} className="mailchimp">
                 {/* <Mailchimp></Mailchimp> */}
-                <Customform/>
+                <Customform />
               </div>
             </div>
           </div>
@@ -74,11 +74,11 @@ const landing_page = () => {
               web development services.
             </p>
             <ul className={styles.list_style}>
-              <li>Software architecture</li>
-              <li>Software integration</li>
-              <li>Software modernisation</li>
-              <li>API development</li>
-              <li>Maintenance and support</li>
+              <li>Portfolios</li>
+              <li>E-commerce</li>
+              <li>Business websites</li>
+              <li>Event Management</li>
+              <li>Enterprise Solutions</li>
             </ul>
           </div>
           <div className={styles.fb3}>
@@ -93,14 +93,13 @@ const landing_page = () => {
               Mobile Applications Development
             </h3>
             <p className={styles.size_18}>
-              Our development team is made up of experienced professionals.
-              They're passionate about developing quality native mobile
-              applications for all platforms, Android devices, and mobile
-              cross-platform solutions.
+              Our mobile application development team is made up of experienced
+              professionals. They’re passionate about developing quality native
+              mobile applications for all platforms1
             </p>
             <ul className={styles.list_style}>
               <li>iPhone and iPad</li>
-              <li>Android smartphones</li>
+              <li>Android smartphones and tablets</li>
               <li>
                 Cross-platform solutions (such as, React Native, Unity 3D,
                 Flutter, etc.)
@@ -127,8 +126,8 @@ const landing_page = () => {
               <li>User research and personas description</li>
               <li>UX/UI design for web and mobile apps</li>
               <li>Software wireframing and prototyping</li>
-              <li>Data-driven design</li>
-              <li>Data visualisation</li>
+              <li>Logo, pamphlet and other marketing materials</li>
+              <li>Data visualization</li>
               <li>Usability, responsiveness, and accessibility</li>
               <li>Design quality control and testing</li>
             </ul>
@@ -139,7 +138,7 @@ const landing_page = () => {
           <img className={styles.logo} src="logo.svg" alt="logo" />
           <hr className={styles.footer_hr} />
           <p className={styles.size_14}>
-            yourproductmatters @ 2022 copyrights all reserved
+            ©2022 YourProductMatters Inc. All Rights Reserved
           </p>
         </div>
       </div>

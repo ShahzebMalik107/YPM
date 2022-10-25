@@ -118,14 +118,14 @@ const Customform = () => {
 
         <div>
           <label className={"form_label"} htmlFor="message">
-            Please tell us more about your product/ide
+            Please tell us more about your product/idea
           </label>
           <input
             type={"text"}
             className={"form_input"}
             name="message"
             id="message"
-            placeholder="Message...."
+            placeholder="This will help prepare for our meeting"
             onChange={(e) => {
               setmessage(e.target.value);
             }}
