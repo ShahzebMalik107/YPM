@@ -154,8 +154,8 @@ const Customform = () => {
         </button>
 
         {/* <button type="button" onClick={(e) => openRecaptcha(e)}>Recaptcha</button> */}
-        <p>
-          {MessageSend ? "Thank you for your message. It has been sent." : ""}
+        <p className="form_success">
+          {MessageSend ? "Thank you for your message." : ""}
         </p>
       </form>
   
