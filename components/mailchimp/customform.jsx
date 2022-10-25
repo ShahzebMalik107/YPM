@@ -128,13 +128,14 @@ const Customform = () => {
             }}
           ></textarea>
         </div>
-        {/* <div className="recaptcha" data-sitekey="6LcAaN8hAAAAACBL1sAynDE0uyAY9DYesIe4bquo"></div> */}
+        {/* <div className="recaptcha" data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"></div> */}
         <button
           className={"g-recaptcha"}
           data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"
           data-callback="onSubmit"
           data-action="submit"
           id="submit-form"
+          type="submit"
         >
           {!Loadingstate ? "Send" : "Sending ..."}
         </button>
