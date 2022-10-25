@@ -131,7 +131,7 @@ const Customform = () => {
         {/* <div className="recaptcha" data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"></div> */}
         <button
           className={"g-recaptcha"}
-          data-sitekey="reCAPTCHA_6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"
+          data-sitekey="6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu"
           data-callback='onSubmit' 
           data-action='submit'
           id="submit-form"
