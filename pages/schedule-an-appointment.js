@@ -5,6 +5,7 @@ import Script from "next/script";
 import Head from "next/head";
 // import Mailchimp from "../components/mailchimp/mailchimp";
 import Customform from "../components/mailchimp/customform";
+import Testimonals from "../components/testimonals/testimonals";
 
 const landing_page = () => {
   return (
@@ -101,7 +102,7 @@ const landing_page = () => {
             <p className={styles.size_18}>
               Our mobile application development team is made up of experienced
               professionals. They’re passionate about developing quality native
-              mobile applications for all platforms1
+              mobile applications for all platforms.
             </p>
             <ul className={styles.list_style}>
               <li>iPhone and iPad</li>
@@ -139,7 +140,9 @@ const landing_page = () => {
             </ul>
           </div>
         </div>
-
+        <div className={"container "+styles.testimonals}>
+          <Testimonals/>
+        </div>
         <div className={styles.footer}>
           <img className={styles.logo} src="logo.svg" alt="logo" />
           <hr className={styles.footer_hr} />

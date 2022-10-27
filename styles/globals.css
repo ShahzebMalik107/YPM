@@ -448,7 +448,8 @@ a {
     }
 }
 /* Mailchimp css */
-.mailchimp {
+.mailchimp,
+.calenderly > iframe {
     background-color: #fff;
     padding: 10px 0;
     border-radius: 5px !important;
@@ -468,7 +469,7 @@ a {
     align-items: space-between !important;
     width: 100% !important;
 }
-#mc_embed_signup input{
+#mc_embed_signup input {
     background-color: #fff;
     border: 0 !important ;
     border-bottom: 2px solid var(--primary_color) !important;
@@ -477,11 +478,11 @@ a {
 /* #mc_embed_signup input:focus-visible {
     outline: none;
 } */
-#mc-embedded-subscribe{
+#mc-embedded-subscribe {
     background-color: var(--primary_color) !important;
 }
-#mc-embedded-subscribe:hover{
-    background-color: #A387BC !important;
+#mc-embedded-subscribe:hover {
+    background-color: #a387bc !important;
 }
 
 /* Custom Form css */
@@ -490,14 +491,15 @@ form#form {
     padding: 20px;
 }
 
-#form input, #form textarea {
+#form input,
+#form textarea {
     width: 100%;
     border: none;
     border-bottom: solid 2px #a387bc;
     margin-bottom: 20px;
     font-family: "Montserrat", sans-serif;
 }
-#form textarea{
+#form textarea {
     border: solid 2px #a387bc;
 }
 
@@ -514,14 +516,80 @@ form#form {
     color: #fff;
     cursor: pointer;
     border: 0;
-    transition: .5s all;
+    transition: 0.5s all;
 }
 
 #form button:hover {
     background-color: var(--secondary_color);
 }
 
-
+.slick-track > div {
+    padding: 13px;
+}
+.slick-track > div h3{
+    color: var(--primary_color);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.slider-inner-s{
+    display: flex;
+    box-shadow: #c3c3c359 0 0px 11px 3px;
+    border-radius: 10px ;
+    justify-content: space-between;
+}
+.slider-inner-s p{
+    padding:0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    transition: .5s all;
+}
+.slider-inner-s p:hover{
+    display: block;
+}
+.slider-inner-s img{
+    border-radius:50px  ;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    padding: 10px;
+}
+/* .slider-inner-s p{
+    padding-right: 35px;
+} */
+.slider-inner-s > div{
+    padding: 10px;
+}
+.testimonals-heading{
+    color: #a387bc;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.testimonal-subheading{
+    margin: 0;
+    color: var(--secondary_color);
+}
+.btn-social-media{
+    color: #fff;
+    background-color: #a387bc;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: .5s all;
+}
+.btn-social-media:hover{
+    background-color: var(--primary_color);
+}
+.calendly-inline-widget {
+    position: relative;
+    min-width: 320px;
+    height: 600px;
+    box-shadow: #38324f94 4px 5px 20px 13px;
+    border-radius: 5px;
+    overflow: hidden;
+}
 @media only screen and (max-width: 1024px) {
     .container {
         padding: 0 20px;
@@ -589,6 +657,33 @@ form#form {
     }
     #landing-page .calendly-inline-widget {
         height: 735px !important;
+    }
+    .slider-inner-s{
+        flex-wrap: wrap;
+        position: relative;
+        padding-bottom: 30px;
+    }
+    
+    .slider-inner-s h4, .slider-inner-s h3{
+        padding: 0 10px;
+    }
+    .slider-inner-s > div{
+        flex-basis: 100%;
+    }
+    .social-media{
+        text-align: center;
+    }
+    .slider-inner-s p:after {
+        content: "Read More";
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        text-decoration: underline;
+    }
+    
+    
+    .slider-inner-s p:hover:after {
+        content: " ";
     }
 }
 @media only screen and (max-width: 690px) {
