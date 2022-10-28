@@ -526,30 +526,30 @@ form#form {
 .slick-track > div {
     padding: 13px;
 }
-.slick-track > div h3{
+.slick-track > div h3 {
     color: var(--primary_color);
     margin-top: 0;
     margin-bottom: 10px;
 }
-.slider-inner-s{
+.slider-inner-s {
     display: flex;
     box-shadow: #c3c3c359 0 0px 11px 3px;
-    border-radius: 10px ;
+    border-radius: 10px;
     justify-content: space-between;
 }
-.slider-inner-s p{
-    padding:0 10px;
+.slider-inner-s p {
+    padding: 0 10px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    transition: .5s all;
+    transition: 0.5s all;
 }
-.slider-inner-s p:hover{
+.slider-inner-s p:hover {
     display: block;
 }
-.slider-inner-s img{
-    border-radius:50px  ;
+.slider-inner-s img {
+    border-radius: 50px;
     height: 70px;
     width: 70px;
     object-fit: cover;
@@ -558,28 +558,28 @@ form#form {
 /* .slider-inner-s p{
     padding-right: 35px;
 } */
-.slider-inner-s > div{
+.slider-inner-s > div {
     padding: 10px;
 }
-.testimonals-heading{
+.testimonals-heading {
     color: #a387bc;
     text-align: center;
     padding-bottom: 30px;
 }
-.testimonal-subheading{
+.testimonal-subheading {
     margin: 0;
     color: var(--secondary_color);
 }
-.btn-social-media{
+.btn-social-media {
     color: #fff;
     background-color: #a387bc;
     padding: 10px 20px;
     margin-top: 20px;
     margin-right: 10px;
     display: inline-block;
-    transition: .5s all;
+    transition: 0.5s all;
 }
-.btn-social-media:hover{
+.btn-social-media:hover {
     background-color: var(--primary_color);
 }
 .calendly-inline-widget {
@@ -636,6 +636,17 @@ form#form {
     .flex {
         flex-wrap: wrap;
     }
+    .slick-next:before,
+    .slick-prev:before {
+        color: #2a2441 !important;
+    }
+    .slick-next {
+        right: -10px;
+    }
+
+    .slick-prev {
+        left: -10px;
+    }
     .nav-active {
         display: block !important;
     }
@@ -658,19 +669,20 @@ form#form {
     #landing-page .calendly-inline-widget {
         height: 735px !important;
     }
-    .slider-inner-s{
+    .slider-inner-s {
         flex-wrap: wrap;
         position: relative;
         padding-bottom: 30px;
     }
-    
-    .slider-inner-s h4, .slider-inner-s h3{
+
+    .slider-inner-s h4,
+    .slider-inner-s h3 {
         padding: 0 10px;
     }
-    .slider-inner-s > div{
+    .slider-inner-s > div {
         flex-basis: 100%;
     }
-    .social-media{
+    .social-media {
         text-align: center;
     }
     .slider-inner-s p:after {
@@ -680,8 +692,7 @@ form#form {
         left: 20px;
         text-decoration: underline;
     }
-    
-    
+
     .slider-inner-s p:hover:after {
         content: " ";
     }
