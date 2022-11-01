@@ -38,6 +38,10 @@ function Footer() {
                   <li>
                     <Link href="/consultation">Get a free Consultation</Link>
                   </li>
+
+                  <li>
+                    <Link href="/privacy-policy">Privacy policy</Link>
+                  </li>
                 </ul>
               </div>
             </div>
