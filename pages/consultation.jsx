@@ -18,11 +18,10 @@ const Contact_us = () => {
         </Head>
         <div className="container">
           <div className={style.title}>
-            <h2 className="heading">Schedule an Appointment</h2>
+            <h2 className="heading">Schedule a Free Consultation</h2>
             <Line />
             <p className="paragraph">
-              Please select a date and time on which you would like to discuss
-              your project</p>
+            Please choose a time and day to talk about your project and receive a free quote.</p>
           </div>
           <div className={""}>
             <div className={style.form}>
