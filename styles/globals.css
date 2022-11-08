@@ -533,7 +533,7 @@ form#form {
 }
 .slider-inner-s {
     display: flex;
-    box-shadow: #c3c3c359 0 0px 11px 3px;
+    box-shadow: #c3c3c330 0 0px 11px 3px;
     border-radius: 10px;
     justify-content: space-between;
 }
@@ -543,10 +543,12 @@ form#form {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    transition: 0.5s all;
+    transition: 2s all;
+    max-height: 60px;
 }
 .slider-inner-s p:hover {
     display: block;
+    max-height: 60em;
 }
 .slider-inner-s img {
     border-radius: 50px;
