@@ -51,9 +51,9 @@ const services = () => {
       </section>
       {/* Services main */}
       <section className={styles.service_main}>
-        <div className={"container " + styles.inner}>
-          <div className={styles.service_left}>
-            <Image
+        <div className={"container " + `${styles.inner}  ${styles.img_center}` }>
+          <div className={ `${styles.service_left} ${styles.img_center}`}>
+            <Image className={styles.img_center}
               src={tech_service_img.src}
               height={tech_service_img.height}
               width={tech_service_img.width}
@@ -110,19 +110,19 @@ const services = () => {
             </Link> */}
           </div>
 
-          <div className={styles.service_left}>
-            <Image
-              src={web_app_img.src}
-              height={web_app_img.height}
-              width={web_app_img.width}
-            />
+          <div className={`${styles.service_left} ${styles.img_center}`}>
+              <Image
+                src={web_app_img.src}
+                height={web_app_img.height}
+                width={web_app_img.width}
+              />
           </div>
         </div>
       </section>
 
       <section id="mobileapp" className={styles.service_main}>
         <div className={"container " + styles.inner}>
-          <div className={styles.service_left}>
+          <div className={ `${styles.service_left} ${styles.img_center}`}>
             <Image
               src={mobile_img.src}
               height={mobile_img.height}
@@ -208,7 +208,7 @@ const services = () => {
             </Link> */}
           </div>
 
-          <div className={styles.service_left}>
+          <div className={ `${styles.service_left} ${styles.img_center}`}>
             <Image
               src={UIUX_img.src}
               height={UIUX_img.height}
@@ -220,7 +220,7 @@ const services = () => {
 
       <section id="graphic_design" className={styles.service_main}>
         <div className={"container " + styles.inner}>
-          <div className={styles.service_left}>
+          <div className={ `${styles.service_left} ${styles.img_center}`}>
           <Image
               src={graphic_design.src}
               height={graphic_design.height}
@@ -252,7 +252,7 @@ const services = () => {
            
           </div>
 
-          <div className={styles.service_left}>
+          <div className={ `${styles.service_left} ${styles.img_center}`}>
             <Image
               src={seo_img.src}
               height={seo_img.height}

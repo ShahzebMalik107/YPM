@@ -113,7 +113,7 @@
 }
 
 .Testimonials {
-    background-color: var(--primary_color);
+    background-color: var(--secondary_color);
     position: relative;
     z-index: 1;
 }
@@ -134,6 +134,10 @@
 }
 .fix_width .line_heading{
     margin: auto;
+}
+.testimonals{
+    margin: 50px auto 0;
+    background-color: var(--washed_golden);
 }
 
 @media only screen and (max-width: 1024px) {

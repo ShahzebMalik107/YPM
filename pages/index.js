@@ -5,6 +5,8 @@ import Image from "next/image";
 import Line from "../components/utils/line";
 import { Fragment } from "react";
 import Link from "next/link";
+import Testimonals from "../components/testimonals/testimonals";
+
 // import InViewPoint from "../components/utils/InViewPoint";
 
 export default function Home() {
@@ -150,7 +152,31 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Careers */}
+
+      <div className={styles.testimonals + " padding-100"}>
+        <div className="container ">
+            <Testimonals/>
+        </div>
+      </div>
+
+
+      
+      <section className={styles.Testimonials + " padding-100"}>
+        <div className="container"> 
+          <div className={styles.we_server_heading}>
+            <h2 className="heading light">Schedule a Free Consultation</h2>
+            <div className="line_heading">
+              <span className="small-line"></span> 
+              <span className="large-line"></span>
+            </div>
+          </div>
+          <button className="btn btn-Dark btn-center">
+            <a href="/consultation">Get in touch</a>
+          </button>
+        </div>
+      </section>
+
+      {/* { Careers } */}
       {/* <section className={styles.careers + " padding-100"}>
         <div className="container center">
           <div className={styles.fix_width}>
