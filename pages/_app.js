@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
   });
   const router = useRouter();
   const showHeader = router.pathname === "/schedule-an-appointment" ? false : true;
+  const showHeaderlp = router.pathname === "/lp2" ? false : true;
   return (
     <Fragment>
       <Head>
@@ -68,10 +69,10 @@ function MyApp({ Component, pageProps }) {
         ></iframe>
       </noscript>
       {/* <!-- End Google Tag Manager (noscript) --> */}
-      {showHeader && <Header_v2 />}
+      {showHeader && showHeaderlp && <Header_v2 />}
       {loading && <Loader />}
       <Component {...pageProps} />
-      {showHeader && <Footer />}
+      {showHeader && showHeaderlp && <Footer />}
     </Fragment>
   );
 }
