@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Banner from '../components/landingpagecomponents/banner/banner'
+import IntegratedSolutions from '../components/landingpagecomponents/integratedSolution/integratedSolutions'
+import GetStarted from '../components/landingpagecomponents/getstarted/getStarted'
+import AmazingFeatures from '../components/landingpagecomponents/amazingFeatures/amazingFeatures'
+
+
 const lp2 = () => {
   return (
-    <Banner />
+    <Fragment>
+      <Banner />
+      <IntegratedSolutions />
+      <GetStarted />
+      <AmazingFeatures />
+    </Fragment>
+  
   )
 }
 

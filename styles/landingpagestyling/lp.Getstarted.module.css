@@ -1,0 +1,207 @@
+.col_md_4{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.text_center {
+    text-align: center ;
+}
+.padding_top_50 {
+    padding-top: 50px ;
+}
+.padding_bottom_20 {
+    padding-bottom: 20px ;
+}
+.white_text {
+    color: #fff;
+}
+.padding_bottom_40 {
+    padding-bottom: 40px ;
+}
+.newsletter_form_wrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.newsletter_form_box {
+    margin: 0 auto;
+    max-width: 730px;
+}
+.newsletter_success_box {
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    margin: 5px 0;
+}
+.section_blue.small_paddings {
+    padding: 30px 0;
+}
+.section_blue {
+    background-color: #1e90ff;
+    padding: 90px 0;
+}
+.submit_btn {
+    width: 165px;
+    height: 65px;
+    background: #fff;
+    border: none;
+    color: #1e90ff;
+    display: inline;
+    margin: 0 0 0 -5px;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    font-weight: 700;
+    vertical-align: top;
+    transition: background-color .25s ease-in-out;
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+}
+
+.input_field{
+    width: 100%;
+    max-width: 450px;
+    height: 65px;
+    padding: 0 20px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}
+.input_field::placeholder{
+    color: #fff;
+}
+.section-subtitle.white {
+    color: #ffffff;
+}
+.section-subtitle {
+    font-size: 18px;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px !important;
+}
+a.links, a.links:hover, a.links:focus, a.links:active, a.links:visited {
+    text-decoration: none;
+    outline: 0;
+}
+.margin-right-15 {
+    margin-right: 15px !important;
+}
+.btn_white {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #1089d4;
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    box-shadow: 0px 8px 40px 0 rgb(0 0 0 / 37%);
+    border-radius: 5px 5px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 10px 0;
+    padding: 16px 26px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.btn_white_border {
+    color: #fff;
+    background: transparent;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 5px 5px;
+    margin: 10px 10px;
+    padding: 16px 26px;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.section_title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.section_subtitle {
+    font-size: 18px;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #7c8595;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.section_subtitle.white {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+@media (min-width: 576px)
+{
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .container {
+        max-width: 720px;
+    }
+    .col_md_4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col_md_12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px)
+{
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px)
+{
+        .container {
+        max-width: 1140px;
+    }
+}
+
+
