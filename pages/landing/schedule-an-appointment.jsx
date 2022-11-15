@@ -144,7 +144,7 @@ const landing_page = () => {
           <Testimonals/>
         </div>
         <div className={styles.footer}>
-          <img className={styles.logo} src="logo.svg" alt="logo" />
+          <img className={styles.logo} src="/logo.svg" alt="logo" />
           <hr className={styles.footer_hr} />
           <p className={styles.size_14}>
             ©2022 YourProductMatters Inc. All Rights Reserved
