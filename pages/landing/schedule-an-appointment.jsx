@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import styles from "../styles/landingpage.module.css";
+import styles from "../../styles/landingpage.module.css";
 // import Link from "next/link";
 import Script from "next/script";
 import Head from "next/head";
 // import Mailchimp from "../components/mailchimp/mailchimp";
-import Customform from "../components/mailchimp/customform";
-import Testimonals from "../components/testimonals/testimonals";
+import Customform from "../../components/mailchimp/customform";
+import Testimonals from "../../components/testimonals/testimonals";
 
 const landing_page = () => {
   return (
@@ -21,7 +21,7 @@ const landing_page = () => {
       </Head>
       <div id="landing-page" className={styles.landing_page}>
         <div className={styles.logo_nav}>
-          <img className={styles.logo} src="logo.svg" alt="logo" />
+          <img className={styles.logo} src="/logo.svg" alt="logo" />
         </div>
         <div className={styles.banner_sec}>
           <div className={styles.banner_inner}>

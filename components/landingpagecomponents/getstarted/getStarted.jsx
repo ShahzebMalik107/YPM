@@ -35,7 +35,7 @@ const GetStarted = () => {
                         <h3 className={`${styles.section_title} ${styles.white_text} `}>Ready to make your sales team more productive?</h3>
                         <p className={`${styles.section_subtitle} ${styles.white} ${styles.margin_bottom_30} `}>Communicate with flexible tools that go where your team goes.</p>
                         <a href="#" className={`${styles.links} ${styles.btn_white} ${styles.scrool} ${styles.margin_right_15} `} >Get Started</a>
-                        <a href="#" className={`${styles.links} ${styles.btn_white_border} ${styles.scrool} `}>Request Demo</a>
+                        {/* <a href="#" className={`${styles.links} ${styles.btn_white_border} ${styles.scrool} `}>Request Demo</a> */}
                     </div>
 
                 </div>

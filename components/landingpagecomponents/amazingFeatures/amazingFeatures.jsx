@@ -11,7 +11,7 @@ const AmazingFeatures = () => {
         <div className={`${styles.container}`}>
             <div className={`${styles.row}`}>
                 <div className={`${styles.col_md_12} ${styles.text_center} ${styles.padding_bottom_10}`}>
-                    <h2 className={`${styles.section_title}`}>Amazing Features</h2>
+                    <h2 className={`${styles.section_title}`}>Amazing Services</h2>
                     <p className={`${styles.section_subtitle}`}>Communicate with flexible tools that go where your team goes.</p>
                 </div>
             </div>

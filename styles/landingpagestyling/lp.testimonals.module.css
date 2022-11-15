@@ -1,0 +1,38 @@
+.main{
+    background-color: #FAFBFC;
+    padding: 100px 0;
+}
+.main > div{
+    text-align: center;
+}
+.main_heading{
+    max-width: 800px;
+    margin: auto;
+}
+.testimonals_main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+}
+.inner img{
+    width: 150px;
+    border-radius: 50%;
+    height:150px;
+    object-fit: cover;
+    border: solid 2px #e3e3e3;
+    box-shadow: #dbdbdb 0 0 5px 10px, #a387bc8c 0 0 20px 17px;
+}
+.small_bar{
+    width: 15%;
+    height: 3px;
+    background-color: #a387bc;
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .testimonals_main{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}

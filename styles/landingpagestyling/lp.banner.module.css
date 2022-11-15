@@ -1,14 +1,46 @@
-.banner{
+.banner {
     min-height: 700px;
     background-color: var(--secondary_color);
-    height: 700px;
+    height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var( --text_white) ;
+    color: var(--text_white);
 }
-.banner_grid{
+.banner_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    align-items: center;
+}
+.banner img {
+    width: 100%;
+    border-radius: 20px;
+}
+.lp_form input, .lp_form textarea, .lp_form button {
+    padding: 15px;
+    border-radius: 5px;
+}
+.lp_form input:focus, .lp_form textarea:focus{
+    outline: none;
+}
+.lp_form {
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 10px;
+    color: black;
+    transition: .7s all;
+}
+.lp_form:hover{
+    transform: scale(1.01);
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        height: 100%;
+        padding: 20px 0;
+    }
+    .banner_grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
