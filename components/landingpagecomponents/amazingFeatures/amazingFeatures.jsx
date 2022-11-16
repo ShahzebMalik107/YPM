@@ -19,26 +19,30 @@ const AmazingFeatures = () => {
                 <div className={`${styles.col_md_4}`}>
                     <div className={`${styles.feature_box} ${styles.wow} ${styles.fadeIn}`} data-wow-delay="0.25s" style={{visibility: "visible", animationDelay: "0.25s", animationName: "fadeIn"}}>
                         <i className="fas fa-tachometer-alt"></i>
-                        <h4>Powerful Dashboard</h4>
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
+                        <img src="/lp2/content based websites.png" alt="" />
+                        <h4>Content-based Website </h4>
+                        <p>Business, Portfolio, Blogs and eCommerce website built on a CMS like WordPress, WebFlow etc.</p>
                     </div>
                 </div>
                 <div className={`${styles.col_md_4}`}>
                     <div className={`${styles.feature_box} ${styles.wow} ${styles.fadeIn}`} data-wow-delay="0.5s" style={{visibility: "visible", animationDelay: "0.25s", animationName: "fadeIn"}}>
                         <i className="fas fa-chart-line"></i>
-                        <h4>User Friendly</h4>
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
+                        <img src="/lp2/custom application development.png" alt="" />
+                        <h4>Custom Application Development</h4>
+                        <p>We will create Customized Mobile or Web applications for your company’s specific needs and streamline your company’s internal or customer-facing processes.</p>
                     </div>
                 </div>
                 <div className={`${styles.col_md_4}`}>
                     <div className={`${styles.feature_box} ${styles.wow} ${styles.fadeIn}`} data-wow-delay="0.75s" style={{visibility: "visible", animationDelay: "0.25s", animationName: "fadeIn"}}>
                         <i className="fas fa-bell"></i>
-                        <h4>Smart Notifications</h4>
-                        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
+                        <img src="/lp2/graphic-design.png" alt="" />
+                        <h4>Design</h4>
+                        <p>We follow industry-standard UI/UX practices to create user-friendly Logos, Websites & Mobile Application designs.</p>
                     </div>
                 </div>
             </div>
-            <div className={`${styles.row}`}>
+
+            {/* <div className={`${styles.row}`}>
                 <div className={`${styles.col_md_4}`}>
                     <div className={`${styles.feature_box} ${styles.wow} ${styles.fadeIn}`} data-wow-delay="1s" style={{visibility: "visible", animationDelay: "0.25s", animationName: "fadeIn"}}>
                         <i className="fas fa-hand-holding-usd"></i>
@@ -60,7 +64,7 @@ const AmazingFeatures = () => {
                         <p>Utise wisi enim minim veniam, quis et stationes ullamcorper suscipit ets lobotis nisle consequat nihis etim.</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </section>
 
