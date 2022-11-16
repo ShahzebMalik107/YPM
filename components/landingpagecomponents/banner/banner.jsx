@@ -11,10 +11,9 @@ const Banner = () => {
       <div className="container">
         <div className={styles.banner_grid}>
           <div className={styles.banner_text}>
-            <h2>Premium SaaS Software</h2>
+            <h2>Book a free consultation</h2>
             <p>
-              Start using Square today and track all your data in one central
-              location. There are no limits to how you can look at your data.
+            Whether your idea is about design or development, we’ll connect you with an expert so you can talk about your project. We’ll also share a quote with you. Here’s the best part, IT’S FREE!
             </p>
             <div id="call" className={styles.lp_form}>
               <Customform />
