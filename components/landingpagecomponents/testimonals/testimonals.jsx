@@ -37,6 +37,7 @@ const Testimonals = () => {
             />
             {/* <h3>CHRISTINA HAWKINS</h3>
             <p>Head of SEO</p>
+            <span className={styles.small_bar}></span>
             <p className="paragraph">
               Johnathan is our co-founder and has developed search strategies
               for a variety of clients for over 5 years.
@@ -56,6 +57,10 @@ const Testimonals = () => {
               for a variety of clients for over 5 years.
             </p> */}
           </div>
+          
+          
+          
+         
         </div>
       </div>
     </section>
