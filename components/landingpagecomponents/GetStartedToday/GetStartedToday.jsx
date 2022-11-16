@@ -10,7 +10,7 @@ const GetStartedToday = () => {
       <div className="container">
         <div className={styles.grid}>
           <div>
-            <h2 className="subheading-2">Get Started Today</h2>
+            <h2 className="subheading-2">Some of our favorite tools and technologies</h2>
             <p>
               Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae
               etsum nisle varius sed aliquam etsim vitae netsum, eaque ipsa quae
@@ -30,10 +30,9 @@ const GetStartedToday = () => {
                   <img src="https://cdn-icons-png.flaticon.com/512/739/739249.png" alt="" />
                 </div>
                 <div className={styles.card_text}>
-                  <h3>Customize your workflow.</h3>
+                  <h3>Design</h3>
                   <p>
-                    Manage any process and be ready to address any challenge
-                    with total ease.
+                  Photoshop, xD, Figma, AI, AE, Canva, PS 
                   </p>
                 </div>
               </div>
@@ -50,10 +49,9 @@ const GetStartedToday = () => {
                   <img src="https://cdn-icons-png.flaticon.com/512/739/739249.png" alt="" />
                 </div>
                 <div className={styles.card_text}>
-                  <h3>Easy onboarding, fast adoption.</h3>
+                  <h3>Development</h3>
                   <p>
-                    With Square getting your team on board is as simple as
-                    sending an email.
+                  WP, PHP, ReactJS, NodeJS, Next JS, HTML/CSS, Flutter, XCode, Android Studio
                   </p>
                 </div>
               </div>
@@ -70,10 +68,9 @@ const GetStartedToday = () => {
                   <img src="https://cdn-icons-png.flaticon.com/512/739/739249.png" alt="" />
                 </div>
                 <div className={styles.card_text}>
-                  <h3>Improve subscriber retention.</h3>
+                  <h3>Digital Marketing and SEO</h3>
                   <p>
-                    Analyze customers by region, discounts and more and put a
-                    plan in place.
+                  Google Analytics, Google Ads, Facebook, Microsoft Clarity, Instagram, 
                   </p>
                 </div>
               </div>
@@ -83,11 +80,11 @@ const GetStartedToday = () => {
             <img
               src={
                 activetabs === 1
-                  ? "https://images.unsplash.com/photo-1667210621904-bb7cfa4b42bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
+                  ? "/lp2/graphics.png"
                   : activetabs === 2
-                  ? "https://images.unsplash.com/photo-1664218018556-0bf1297c7653?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                  ? "/lp2/development.png"
                   : activetabs === 3
-                  ? "https://images.unsplash.com/photo-1665757690769-5235ad0ee95b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                  ?  "/lp2/marketing.png"
                   : ""
               }
               alt=""
