@@ -13,16 +13,16 @@ const Pricing = () => {
         <div className={styles.pricing_card}>
           <div className={styles.card}>
             <div className={styles.card_package_type}>
-              <h3 className="subheading">BASIC</h3>
-              <h2 className="heading">$25</h2>
+              <h3 className="subheading">Content-Based Website</h3>
+              <h2 className="heading">$1,000</h2>
               <p>Per Month</p>
             </div>
             <div className={styles.card_package_benifits}>
               <ul>
-                <li>Custom Charts</li>
-                <li>5 Mailboxes, 10 Gb Storage</li>
-                <li>Unlimited Free Dashboards</li>
-                <li>Access to all APIs</li>
+                <li>Business Websites</li>
+                <li>Portfolio Website</li>
+                <li>Ecommerce</li>
+                {/* <li>Access to all APIs</li> */}
               </ul>
               <button class="btn btn-light">
                 <a href="#call">Get in touch</a>
@@ -32,16 +32,15 @@ const Pricing = () => {
           {/* card 2 */}
           <div className={styles.card}>
             <div className={styles.card_package_type}>
-              <h3 className="subheading">BASIC</h3>
-              <h2 className="heading">$25</h2>
+              <h3 className="subheading">Development</h3>
+              <h2 className="heading">$50/hour</h2>
               <p>Per Month</p>
             </div>
             <div className={styles.card_package_benifits}>
               <ul>
-                <li>Custom Charts</li>
-                <li>5 Mailboxes, 10 Gb Storage</li>
-                <li>Unlimited Free Dashboards</li>
-                <li>Access to all APIs</li>
+                <li>Web Applications</li>
+                <li>Mobile Applications</li>
+                <li>Maintenance/Debugging</li>
               </ul>
               <button class="btn btn-light">
                 <a href="#call">Get in touch</a>
@@ -51,16 +50,15 @@ const Pricing = () => {
           {/* card 3 */}
           <div className={styles.card}>
             <div className={styles.card_package_type}>
-              <h3 className="subheading">BASIC</h3>
-              <h2 className="heading">$25</h2>
+              <h3 className="subheading">Design</h3>
+              <h2 className="heading">$35/hour</h2>
               <p>Per Month</p>
             </div>
             <div className={styles.card_package_benifits}>
               <ul>
-                <li>Custom Charts</li>
-                <li>5 Mailboxes, 10 Gb Storage</li>
-                <li>Unlimited Free Dashboards</li>
-                <li>Access to all APIs</li>
+                <li>UI/UX</li>
+                <li>Social Media Content</li>
+                <li>Branding</li>
               </ul>
               <button class="btn btn-light">
                 <a href="#call">Get in touch</a>
