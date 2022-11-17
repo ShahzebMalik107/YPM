@@ -10,12 +10,14 @@
 }
 .banner h2{
    color:#2A2441;
-   font-size: 43px;
+   font-size: 50px;
+   font-weight: 500;
 }
 .banner p{
    color:#2A2441;
    font-size: 18px;
    line-height: 1.2rem;
+  
 }
 
 .banner_grid {
@@ -54,4 +56,20 @@
         display: flex;
         flex-direction: column-reverse;
     }
+    .lp_form{
+        margin-top: 82px;
+
+    }
+    .banner h2{
+        color:#2A2441;
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+     }
+     .banner p{
+        color:#2A2441;
+        font-size: 16px;
+        line-height: 1.2rem;
+       
+     }
 }
