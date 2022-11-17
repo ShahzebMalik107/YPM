@@ -27,7 +27,7 @@ const GetStartedToday = () => {
                 onClick={() => setactivetabs(1)}
               >
                 <div className={styles.card_img}>
-                  <img src="https://cdn-icons-png.flaticon.com/512/739/739249.png" alt="" />
+                  <img src="/lp2/graphic-design.png" alt="" />
                 </div>
                 <div className={styles.card_text}>
                   <h3>Design</h3>
@@ -46,7 +46,7 @@ const GetStartedToday = () => {
                 onClick={() => setactivetabs(2)}
               >
                 <div className={styles.card_img}>
-                  <img src="https://cdn-icons-png.flaticon.com/512/739/739249.png" alt="" />
+                  <img src="/lp2/custom application development.png" alt="" />
                 </div>
                 <div className={styles.card_text}>
                   <h3>Development</h3>
@@ -65,7 +65,7 @@ const GetStartedToday = () => {
                 onClick={() => setactivetabs(3)}
               >
                 <div className={styles.card_img}>
-                  <img src="https://cdn-icons-png.flaticon.com/512/739/739249.png" alt="" />
+                  <img src="/lp2/content based websites.png" alt="" />
                 </div>
                 <div className={styles.card_text}>
                   <h3>Digital Marketing and SEO</h3>
