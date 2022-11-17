@@ -10,7 +10,7 @@ const IntegratedSolutions = () => {
                 <div className={`${styles.row}`}>
                     <div className={`${styles.col_md_12} ${styles.text_center}`}>
                         <h2 className={`subheading-2`}>What you can expect from us</h2>
-                        <p className={`${styles.section_subtitle}`}>We don't pretend to have all the answers at the start. But we have the experience to know the best path to follow, the agility to adapt as we go along, and the drive to always deliver on our commitments..</p>
+                        <p className={`${styles.section_subtitle}`}>We don't pretend to have all the answers at the start. But we have the experience to know the best path to follow, the agility to adapt as we go along, and the drive to always deliver on our commitments.</p>
                     </div>
                 </div>
             </div>
