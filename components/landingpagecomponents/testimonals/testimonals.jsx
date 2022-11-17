@@ -8,11 +8,11 @@ const Testimonals = () => {
       <div className="container">
         <div className={styles.main_heading}>
           <h2 className="subheading">Projects we’re proud of</h2>
-          <p className="paragraph">
+          {/* <p className="paragraph">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration, by injected humour, or new
             randomised words.
-          </p>
+          </p> */}
         </div>
         <div className={styles.testimonals_main}>
           {/* 01 */}
