@@ -16,17 +16,19 @@ const lp2 = () => {
     <>
       <Header />
       <Banner />
-      <IntegratedSolutions />
-      <GetStartedToday />
       <AmazingFeatures />
+      <IntegratedSolutions />
+      <Pricing />
+      <GetStartedToday />
+      <Testimonals />
       <GetStarted />
       <Faqs />
-      <Testimonals />
+      
       <Banifits />
       <div className="container" style={{ padding: "100px 0" }}>
         <Testimonals_2 />
       </div>
-      <Pricing />
+      
       <Footer />
     </>
   );
