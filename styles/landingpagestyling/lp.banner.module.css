@@ -1,12 +1,23 @@
 .banner {
     min-height: 700px;
-    background-color: var(--secondary_color);
+    /* background-color: var(--secondary_color); */
     height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text_white);
+   background: url("../../public/lp2/backgroung.jpg") no-repeat center center/cover;
 }
+.banner h2{
+   color:#2A2441;
+   font-size: 43px;
+}
+.banner p{
+   color:#2A2441;
+   font-size: 18px;
+   line-height: 1.2rem;
+}
+
 .banner_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -18,14 +29,14 @@
     border-radius: 20px;
 }
 .lp_form input, .lp_form textarea, .lp_form button {
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
 }
 .lp_form input:focus, .lp_form textarea:focus{
     outline: none;
 }
 .lp_form {
-    background-color: rgba(255, 255, 255, 0.336);
+    background-color:#a387bc98;
     border-radius: 10px;
     color: black;
     transition: .7s all;
