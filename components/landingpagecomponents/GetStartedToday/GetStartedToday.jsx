@@ -11,11 +11,11 @@ const GetStartedToday = () => {
         <div className={styles.grid}>
           <div>
             <h2 className="subheading-2">Some of our favorite tools and technologies</h2>
-            <p>
+            {/* <p>
               Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae
               etsum nisle varius sed aliquam etsim vitae netsum, eaque ipsa quae
               ab illo inventore veritatis et quasi architecto.
-            </p>
+            </p> */}
             <div className={styles.card}>
               {/* carrd 1 */}
               <div
