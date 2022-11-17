@@ -19,23 +19,23 @@ const IntegratedSolutions = () => {
                     <div className={`${styles.row}`}>
                         <div className={`${styles.col_md_4}`}>
                             <div className={`${styles.main_services}`}>
-                                <img src="/lp2/services-icon1.png" alt="pic"/>
+                                <img src="/lp2/Technical-expertise.png" alt="pic"/>
                                 <h3>Technical expertise</h3>
                                 <p>Our technical team is divided into multiple departments based on the technology they work on. These departments are led by individuals that are veterans of their craft.</p>
                             </div>
                         </div>
                         <div className={`${styles.col_md_4}`}>
                             <div className={`${styles.main_services}`}>
-                                <img src="/lp2/services-icon2.png" alt="pic"/>
+                                <img src="/lp2/Clear-communication.png" alt="pic"/>
                                 <h3>Clear communication</h3>
                                 <p>We believe that a clear channel of communication is as important as your knowledge. Your project manager will keep you in the loop every step of the way to view website/app progress, provide input, and allow you to voice any comments or concerns.</p>
                             </div>
                         </div>
                         <div className={`${styles.col_md_4}`}>
                             <div className={`${styles.main_services}`}>
-                                <img src="/lp2/services-icon3.png" alt="pic" />
+                                <img src="/lp2/Commitment.png" alt="pic" />
                                 <h3>Commitment </h3>
-                                <p>OUR WORD IS OUR BOND! We stick to the budget and the time that we have quoted!</p>
+                                <p><strong>OUR WORD IS OUR BOND!</strong> We stick to the budget and the time that we have quoted!</p>
                             </div>
                         </div>
                     </div>

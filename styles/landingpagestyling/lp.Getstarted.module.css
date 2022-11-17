@@ -110,6 +110,7 @@ a.links, a.links:hover, a.links:focus, a.links:active, a.links:visited {
     margin-right: 15px !important;
 }
 .btn_white {
+    display: inline-block;
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
@@ -119,7 +120,7 @@ a.links, a.links:hover, a.links:focus, a.links:active, a.links:visited {
     box-shadow: 0px 8px 40px 0 rgb(0 0 0 / 37%);
     border-radius: 5px 5px;
     letter-spacing: 1px;
-    margin: 10px 10px 0 10px 0;
+    margin: 10px 10px 10px 10px ;
     padding: 16px 26px;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;

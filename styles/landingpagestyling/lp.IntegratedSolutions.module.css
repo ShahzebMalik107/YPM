@@ -46,6 +46,7 @@
     border-radius: 8px 8px;
     box-shadow: 12px 14px 0 #e5edfa;
     transition: all 1s;
+    height: 80%;
 }
 .services_wrapper::after {
     background-image: radial-gradient(#e2ecf9 15%,transparent 25%);
@@ -82,7 +83,7 @@
     transition: all 1s;
 }
 .main_services img {
-    width: 80px;
+    width: 140px;
     margin-bottom: 25px;
 }
 .text_center {
