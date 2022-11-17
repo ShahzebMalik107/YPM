@@ -23,9 +23,8 @@ const lp2 = () => {
       <Testimonals />
       <GetStarted />
       {/* <Faqs /> */}
-      
-      <Banifits />
-      <div className="container" style={{ padding: "100px 0" }}>
+      {/* <Banifits /> */}
+      <div className="container" style={{ padding: "100px 0" }} id="testimonials">
         <Testimonals_2 />
       </div>
       

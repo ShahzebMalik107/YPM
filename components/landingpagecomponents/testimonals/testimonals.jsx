@@ -4,7 +4,7 @@ import styles from "../../../styles/landingpagestyling/lp.testimonals.module.css
 
 const Testimonals = () => {
   return (
-    <section id="showcase" className={styles.main}>
+    <section id="portfolio" className={styles.main} >
       <div className="container">
         <div className={styles.main_heading}>
           <h2 className="subheading">Projects we’re proud of</h2>
