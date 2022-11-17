@@ -20,7 +20,7 @@ const lp2 = () => {
       <GetStartedToday />
       <AmazingFeatures />
       <GetStarted />
-      {/* <Faqs /> */}
+      <Faqs />
       <Testimonals />
       <Banifits />
       <div className="container" style={{ padding: "100px 0" }}>
