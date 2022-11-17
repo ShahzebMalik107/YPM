@@ -16,11 +16,11 @@
 }
 .inner img{
     width: 150px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     height:150px;
-    object-fit: cover;
-    border: solid 2px #e3e3e3;
-    box-shadow: #dbdbdb 0 0 5px 10px, #a387bc8c 0 0 20px 17px;
+    object-fit: contain;
+    /* border: solid 2px #e3e3e3; */
+    /* box-shadow: #dbdbdb 0 0 5px 10px, #a387bc8c 0 0 20px 17px; */
 }
 .small_bar{
     width: 15%;
