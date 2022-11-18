@@ -2,6 +2,8 @@ import React, { Fragment, useState } from "react";
 import axios from "axios";
 import Script from "next/script";
 import {load } from 'recaptcha-v3'
+import Router from "next/router";
+import { NextResponse } from "next/server";
 
 
 // import style from "../../styles/module.customform.css"
@@ -16,7 +18,6 @@ const Cf2 = () => {
 
   const onSubmitHandler = async (event) => {
     event.preventDefault();
-
     console.log('recapthca :>> ');
     const recaptcha =await load('6LdaN7AiAAAAAKzguA2PCDUqeMJOenxvicpXKSwu')
     const token = await recaptcha.execute()
@@ -53,6 +54,7 @@ const Cf2 = () => {
         setLoadingstate(false);
         setMessageSend(true);
         resetform();
+
       })
       .catch((err) => {
         console.log(err);
@@ -60,6 +62,7 @@ const Cf2 = () => {
   };
   const resetform = () => {
     document.getElementById("form").reset();
+    window.location.href="/thank-you";
   };
 
   return (
@@ -176,6 +179,7 @@ const Cf2 = () => {
         <p className="form_success">
           {MessageSend ? "Thank you for your message." : ""}
         </p>
+        
       </form>
   
     </Fragment>

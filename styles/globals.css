@@ -630,6 +630,27 @@ form#form {
         text-align: right;
     }
 }
+.ty-thankyou{
+    background: #a79db1;
+    padding: 10px 0;
+}
+.ty-thankyou img{
+    width: 15%;
+}
+.ty_main{
+    margin-top: 100px;
+    text-align: center;
+}
+.ty_main p{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 0;
+}
+.ty_main img{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
     #landing-page .calendly-inline-widget {
         height: 650px !important;
