@@ -29,7 +29,7 @@ function Header_v2() {
     <header id="header" className={style.header}>
       <Head>
         <title>YPM</title>
-       
+
       </Head>
 
       <div className={style.header_main}>
@@ -76,10 +76,10 @@ function Header_v2() {
                 className={
                   Activemenu === 2
                     ? style.nav_item +
-                      " " +
-                      style.nav_item_active +
-                      " " +
-                      style.nav_item_dropdown
+                    " " +
+                    style.nav_item_active +
+                    " " +
+                    style.nav_item_dropdown
                     : style.nav_item + " " + style.nav_item_dropdown
                 }
               >

@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import AmazingFeatures from "../../components/landingpagecomponents/amazingFeatures/amazingFeatures";
 import Banner from "../../components/landingpagecomponents/banner/banner";
 import Banifits from "../../components/landingpagecomponents/benefits/banifits";
@@ -11,9 +12,19 @@ import IntegratedSolutions from "../../components/landingpagecomponents/integrat
 import Pricing from "../../components/landingpagecomponents/pricing/pricing";
 import Testimonals from "../../components/landingpagecomponents/testimonals/testimonals";
 import Testimonals_2 from "../../components/testimonals/testimonals";
+
 const lp2 = () => {
   return (
     <>
+      <Head>
+        <meta
+          name="description"
+          content="YourProductMatters specializes in offering services to medium-sized and large businesses all across the world."
+        />
+        <title>What We Offer -YourProductMatters</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
       <Header />
       <Banner />
       <AmazingFeatures />
