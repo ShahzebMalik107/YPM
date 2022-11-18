@@ -38,6 +38,9 @@
         display: block;
     }
     .grid_img img{
-        height: 300px;
-    }
+        height: 300px;   
+}
+.grid h2{
+    text-align: center;
+}
 }

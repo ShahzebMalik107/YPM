@@ -525,7 +525,7 @@ form#form {
 }
 
 .slick-track > div {
-    padding: 13px;
+    padding: 20px;
 }
 .slick-track > div h3 {
     color: var(--primary_color);
@@ -648,7 +648,7 @@ form#form {
     }
 
     .slick-prev {
-        left: -10px;
+        left: -1px;
     }
     .nav-active {
         display: block !important;
