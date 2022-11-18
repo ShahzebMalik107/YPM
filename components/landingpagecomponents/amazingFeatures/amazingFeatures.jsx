@@ -11,7 +11,7 @@ const AmazingFeatures = () => {
         <div className={`${styles.container}`}>
             <div className={`${styles.row}`}>
                 <div className={`${styles.col_md_12} ${styles.text_center} ${styles.padding_bottom_10}`}>
-                    <h2 className={`${styles.section_title}`}> Services</h2>
+                    <h2 className={"subheading"}> Services</h2>
                     <p className={`${styles.section_subtitle}`}>We work as an extension of you. Let's go on an improvement journey, together.</p>
                 </div>
             </div>

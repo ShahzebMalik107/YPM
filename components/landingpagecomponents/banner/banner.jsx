@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../../../styles/landingpagestyling/lp.banner.module.css";
-import Customform from "../../mailchimp/customform";
+import Customform from "../../mailchimp/cf2";
 
 const Banner = () => {
   let innitalstate = 1;

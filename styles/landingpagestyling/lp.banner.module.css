@@ -30,9 +30,13 @@
     width: 100%;
     border-radius: 20px;
 }
-.lp_form input, .lp_form textarea, .lp_form button {
+.lp_form input, .lp_form textarea, .lp_form button, .lp_form select {
     padding: 10px;
     border-radius: 5px;
+    width: 100%;
+}
+.lp_form select{
+    margin-bottom: 20px;
 }
 .lp_form input:focus, .lp_form textarea:focus{
     outline: none;
