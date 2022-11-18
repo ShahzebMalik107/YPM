@@ -10,7 +10,7 @@ const Cf2 = () => {
   const [email, setEmail] = useState("");
   const [phoneno, setphoneno] = useState("");
   const [message, setmessage] = useState("");
-  const [services, setservices] = useState("");
+  const [services, setservices] = useState("Content-Based Website");
   const [Loadingstate, setLoadingstate] = useState(false);
   const [MessageSend, setMessageSend] = useState(false);
 
