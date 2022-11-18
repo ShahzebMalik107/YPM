@@ -14,7 +14,7 @@ const services = () => {
     <Fragment>
        <Head>
         <title>Services at YPM</title>
-        <meta name="description" content="We work as an extension of you. Let's go on an imporvement journey, together." />
+        <meta name="description" content="We work as an extension of you. Let's go on an improvement journey, together." />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <section className={styles.top_banner}>
