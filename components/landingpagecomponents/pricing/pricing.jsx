@@ -5,17 +5,18 @@ const Pricing = () => {
     <section id="pricing" className={styles.Pricing}>
       <div className="container">
         <h2 className="subheading center">
-          Pricing for every business, at any stage
+          {/* Pricing for every business, at any stage */}
+          Pricing for individuals  business for all stages.
         </h2>
         <p className="paragraph center">
-          All pricing packages are backed up by a 30-day money back guarantee.
+          {/* All pricing packages are backed up by a 30-day money back guarantee. */}
         </p>
         <div className={styles.pricing_card}>
           <div className={styles.card}>
             <div className={styles.card_package_type}>
               <h3 className="subheading">Content-Based Website</h3>
               <h2 className="heading">$1,000</h2>
-              <p>Per Month</p>
+              <p>Starting at</p>
             </div>
             <div className={styles.card_package_benifits}>
               <ul>
@@ -33,8 +34,8 @@ const Pricing = () => {
           <div className={styles.card}>
             <div className={styles.card_package_type}>
               <h3 className="subheading">Development</h3>
-              <h2 className="heading">$50/hour</h2>
-              <p>Per Month</p>
+              <h2 className="heading">$50</h2>
+              <p>Per Hour</p>
             </div>
             <div className={styles.card_package_benifits}>
               <ul>
@@ -51,8 +52,8 @@ const Pricing = () => {
           <div className={styles.card}>
             <div className={styles.card_package_type}>
               <h3 className="subheading">Design</h3>
-              <h2 className="heading">$35/hour</h2>
-              <p>Per Month</p>
+              <h2 className="heading">$35</h2>
+              <p>Per Hour</p>
             </div>
             <div className={styles.card_package_benifits}>
               <ul>
