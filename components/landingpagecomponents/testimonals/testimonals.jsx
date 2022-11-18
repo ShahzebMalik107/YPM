@@ -60,7 +60,7 @@ const Testimonals = () => {
           {/* 04 */}
           <div className={styles.inner}>
             <img
-              src="/lp2/logo.png"
+              src="/lp2/lazeez.png"
               alt=""
             />
           </div>
