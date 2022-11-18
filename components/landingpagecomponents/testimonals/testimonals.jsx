@@ -57,10 +57,31 @@ const Testimonals = () => {
               for a variety of clients for over 5 years.
             </p> */}
           </div>
-          
-          
-          
-         
+          {/* 04 */}
+          <div className={styles.inner}>
+            <img
+              src="/lp2/logo.png"
+              alt=""
+            />
+          </div>
+          {/* 05 */}
+          <div className={styles.inner}>
+            <img
+              src="/lp2/messa.png"
+              alt=""
+            />
+          </div>
+          {/* 04 */}
+          <div className={styles.inner}>
+            <img
+              src="/lp2/sinners-steakhouse.png"
+              alt=""
+            />
+          </div>
+
+
+
+
         </div>
       </div>
     </section>
