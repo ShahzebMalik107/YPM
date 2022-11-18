@@ -6,7 +6,7 @@ const Pricing = () => {
       <div className="container">
         <h2 className="subheading center">
           {/* Pricing for every business, at any stage */}
-          Pricing for individuals  business for all stages.
+          Pricing to suit individuals and businesses of all sizes.
         </h2>
         <p className="paragraph center">
           {/* All pricing packages are backed up by a 30-day money back guarantee. */}
