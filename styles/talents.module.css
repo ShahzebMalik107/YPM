@@ -1,0 +1,107 @@
+
+.banner_section{
+    background-color: #F2F9FF;
+    padding: 150px 10px 50px;
+}
+.banner_background{
+    background-image: url(/talentpage/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    max-width: 1290px;
+    margin: auto;
+    height: 318px;
+}
+
+.banner_text{
+    color: #2a2441;
+    font-size: 32px;
+    text-align: center;
+}
+
+.button{
+    background: transparent;
+    padding: 10px 30px;
+    border: 1px solid #A387BC;
+    color: #A387BC;
+    font-size: 14px;
+    font-weight: 600;
+}
+.banner_button{
+    background: transparent;
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #2A2441;
+    color: #2A2441;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner_filter{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #ffffff80;
+}
+.banner_filter_item{
+    width: 30%;
+    padding: 10px;
+    background-color: #ffffff90;
+    margin-bottom: 10px;
+}
+
+.banner_button::after{
+    content: " ";
+    background-image: url(/talentpage/search.png);
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.talent_section{
+    background-color: #F2F9FF;
+
+}
+.talent_grid{
+    background-color: #F2F9FF;
+    max-width: 1080px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.talent_item{
+    width: 300px;
+    margin: 0px 10px 20px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.talent_item h2 ,.talent_item h4{
+    margin: 5px 0px;
+}
+
+
+@media only screen and (max-width:500px) {
+    .banner_filter_item{
+        width: 100%;
+    }
+}
