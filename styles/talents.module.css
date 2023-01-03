@@ -48,12 +48,22 @@
     justify-content: space-between;
     padding: 15px;
     background-color: #ffffff80;
+    margin-top: -35px;
 }
 .banner_filter_item{
-    width: 30%;
+    width: 23%;
     padding: 10px;
     background-color: #ffffff90;
     margin-bottom: 10px;
+    border: 1px solid;
+}
+.banner_button_close{
+    background: transparent;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #2A2441;
+    color: #2A2441;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .banner_button::after{

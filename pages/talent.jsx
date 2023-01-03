@@ -1,14 +1,18 @@
 import { Fragment, useState } from "react";
 import styles from "../styles/talents.module.css";
 import Head from "next/head";
+import PasswordProtected from "../components/password_protected";
 
 import React from 'react'
 
-const talents = () => {
+const talents = ({ hasReadPermission }) => {
+    if (!hasReadPermission) {
+        return <PasswordProtected/>
+    }
     const [search,setSearch]=useState(false);
     function handleClick() 
     {
-        setSearch(true)
+        setSearch(!search)
     }
   return (
     <Fragment>
@@ -22,17 +26,12 @@ const talents = () => {
             <div className={styles.banner_background}>
                 <h2 className={styles.banner_text}>Hire Our Company Talent</h2>
                 {search ? 
-                <div className={styles.banner_filter}>
-                    <select name="" id="" className={styles.banner_filter_item +" "+styles.banner_filter_cat}>
-                        <option value="all">All Categories</option>
-                    </select>
-                    <select name="" id="" className={styles.banner_filter_item +" "+styles.banner_filter_tech}>
-                        <option value="all">All Technologies</option>
-                    </select>
-                    <select name="" id="" className={styles.banner_filter_item +" "+styles.banner_filter_location}>
-                        <option value="all">All Locations</option>
-                    </select>
-                </div>
+                < button 
+                className={styles.button +" "+styles.banner_button_close}
+                onClick={handleClick}
+                >
+                Close Search
+            </button> 
                 :
                 < button 
                     className={styles.button +" "+styles.banner_button}
@@ -44,9 +43,23 @@ const talents = () => {
             </div>
         </section>
 
-
+        
         <section className={styles.talent_section}>
             <div className={styles.talent_grid}>
+            {search ? 
+            <div className={styles.banner_filter}>
+                <input type='text' placeholder="Search by Name" id="" className={styles.banner_filter_item +" "+styles.banner_filter_location}/>
+                <select name="" id="" className={styles.banner_filter_item +" "+styles.banner_filter_cat}>
+                    <option value="all">All Categories</option>
+                </select>
+                <select name="" id="" className={styles.banner_filter_item +" "+styles.banner_filter_tech}>
+                    <option value="all">All Technologies</option>
+                </select>
+                <select name="" id="" className={styles.banner_filter_item +" "+styles.banner_filter_location}>
+                    <option value="all">All Locations</option>
+                </select>
+            </div>:null
+        }
                 {/* row 1 */}
                 <div className={styles.talent_item}>
                     <img src="/talentpage/person.png" alt="" />

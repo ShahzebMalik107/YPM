@@ -7,6 +7,9 @@ import { useRouter } from "next/router";
 import Loader from "../components/loader/loader";
 import Head from "next/head";
 import Script from "next/script";
+import Cookies from "universal-cookie"
+import consts from "../consts"
+import App from "next/app"
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -76,6 +79,19 @@ function MyApp({ Component, pageProps }) {
       {showHeader && showHeaderlp&&thankyou && <Footer />}
     </Fragment>
   );
+}
+
+MyApp.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext)
+
+  const cookies = new Cookies(appContext.ctx.req.headers.cookie)
+  const password = cookies.get(consts.SiteReadCookie) ?? ""
+
+  if (password === "letmein") {
+   appProps.pageProps.hasReadPermission = true
+  }
+
+  return { ...appProps }
 }
 
 export default MyApp;
