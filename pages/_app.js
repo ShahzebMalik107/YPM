@@ -84,14 +84,18 @@ function MyApp({ Component, pageProps }) {
 MyApp.getInitialProps = async (appContext) => {
   const appProps = await App.getInitialProps(appContext)
 
-  const cookies = new Cookies(appContext.ctx.req.headers.cookie)
-  const password = cookies.get(consts.SiteReadCookie) ?? ""
+  try {
+    const cookies = new Cookies(appContext.ctx.req.headers.cookie)
+    const password = cookies.get(consts.SiteReadCookie) ?? ""
 
-  if (password === "ypmtalent") {
-   appProps.pageProps.hasReadPermission = true
+    if (password === "ypmtalent") {
+    appProps.pageProps.hasReadPermission = true
+    }
+    return { ...appProps }
+  } catch (error) {
+    return { ...appProps }
+    
   }
-
-  return { ...appProps }
 }
 
 export default MyApp;
