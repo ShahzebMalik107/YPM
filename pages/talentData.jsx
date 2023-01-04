@@ -118,6 +118,7 @@ const talentData = ({ hasReadPermission }) => {
                 <p>Lorem ipsum dolor sit amet consectetur. Ut nam posuere ut eget posuere mi a urna ornare. Morbi est tellus lectus netus at lacus purus neque.</p>
             </div>
 
+
         </section>
         
          </section>
