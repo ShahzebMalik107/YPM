@@ -133,10 +133,8 @@ const services = () => {
           <div className={styles.service_left}>
             <h2 className="subheading">Mobile Applications Development</h2>
             <p className="paragraph-small">
-              Our development team is made up of experienced professionals.
-              They're passionate about developing quality native mobile
-              applications for all platforms, Android devices, and mobile
-              cross-platform solutions.
+            Our team consists of highly qualified professionals. They're passionate about developing quality native mobile applications for all platforms, Android devices, and cross-platform mobile solutions.
+
             </p>
             <ul className={styles.list}>
               <li>
