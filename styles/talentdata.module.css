@@ -242,3 +242,25 @@ background-color: #ffffff;
 margin-top:4rem;
 margin-left: 8rem;
 }
+
+.my_experience h1{
+margin-left: 3rem;
+margin-top: 5rem;
+padding: 2rem;
+
+/* width: 182px; */
+height: 5rem;
+
+font-family: Montserrat;
+font-style: SemiBold;
+font-size: 24px;
+
+}
+.my_experience_designation h3{
+    font-family: Montserrat;
+    font-style: Medium;
+    font-size: 20px;
+
+    height: 24px;
+    width: 121px;
+}

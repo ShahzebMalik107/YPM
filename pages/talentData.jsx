@@ -111,7 +111,13 @@ const talentData = ({ hasReadPermission }) => {
         </div>
         <section className={styles.my_experience}>
             <h1>My Experience</h1>
-            
+            <div className={styles.my_experience_designation}>
+                <h3>Designation</h3>
+                <h5>Company Name, Location</h5>
+                <h6>Start Date - End Date</h6>
+                <p>Lorem ipsum dolor sit amet consectetur. Ut nam posuere ut eget posuere mi a urna ornare. Morbi est tellus lectus netus at lacus purus neque.</p>
+            </div>
+
         </section>
         
          </section>
