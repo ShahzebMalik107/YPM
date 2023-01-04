@@ -1,0 +1,244 @@
+.profile_content_main{
+    /* border: 2px solid red; */
+    margin-top: 10rem;
+    background-color: #F2F9FF;
+}
+.profile_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* border: 2px solid rgb(28, 24, 212); */
+    /* margin-top: 20rem; */
+    
+
+
+    margin-left: 8rem;
+    max-width: 100rem;
+}
+
+.profile_picture img{  
+
+    display: block;
+    border-radius: 50%;      
+}
+.talent_detail{
+
+    /* border: 2px solid red; */
+    margin-left: 3rem;
+    margin-right: 2rem;
+    max-width: 30rem;
+    
+}
+
+.talent_detail h1{
+    width: 261px;
+    height: 29px;
+    font-style: SemiBold;
+    font-size: 24px;
+    color: #000000;
+    font-family:  Montserrat;
+    /* border: 2px solid red; */
+
+}
+.talent_detail h5{
+
+    width: 261px;
+    height: 20px;
+    font-style: regular;
+    font-size: 16px;
+    color: #000000;
+    font-family:  Montserrat;
+    
+    }
+
+.talent_detail p{
+
+    font-family:  Montserrat;
+    font-style: regular;
+    size: 14px;
+    line-height: 22px;
+    align-items: left;
+    }
+
+
+.hire_me{
+
+    margin-left: 15rem;
+    background-color: #FFFFFF;
+    width: 404px;
+    height:245px;
+}
+.hire_me h1{
+    width: 103px;
+    height: 29px;
+    font-style: SemiBold;
+    font-size: 24px;
+    color: #000000;
+    font-family:  Montserrat;
+    margin: 2rem;
+}
+.hire_details{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.hire_details h3{
+    color: #A387BC;
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 20px;
+
+    /* margin-left: 1rem; */
+}
+
+.hire_details p{
+    color: #2A2441;
+    font-family: Montserrat;
+    font-style: Regular;
+    font-size: 12px;
+
+}
+
+.hire_me button{
+
+background-color: #A387BC;
+color: #F2F9FF;
+width: 340px;
+height: 41px;
+margin-left: 2rem;
+
+font-size: 14px;
+font-family: Montserrat;
+font-family: Montserrat;
+font-style: Medium;
+
+}
+
+/* my expertise/Featured project style start */
+
+
+.my_expertise_content{
+
+    display: flex;
+    align-items: center;
+    /* border: 2px solid rgb(42, 13, 146); */
+    background-color: #F2F9FF;
+
+}
+
+.my_expertise{
+    margin-left: 8rem;
+    width: 60rem;
+    height: 25rem;
+
+    background-color: #FFFFFF;
+}
+.my_expertise h1{
+    margin-left: 5rem;
+
+    font-family: Montserrat;
+    font-style: SemiBold ;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+.my_expertise video{
+margin-left: 5rem;
+
+}
+
+
+/* my skills content started */
+
+.my_skill_content{
+    width: 404px;
+    height: 447px;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+    background-color: #FFFFFF;
+    /* border: 2px solid red; */
+    
+}
+.my_skill_content h1{
+    font-family: Montserrat;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 29px;
+
+    margin-left: 2rem;
+
+}
+
+.my_skill_badge{
+    background-color: #DAEAF8;
+    width: 105px;
+    height: 26px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px;
+
+    border-radius: 24px;
+
+
+}
+.my_skill_badge_one{
+
+    background-color: #DAEAF8;
+    width: 105px;
+    height: 26px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px;
+    font-family: Poppins;
+
+    border-radius: 24px;
+
+}
+
+
+.my_skill_badge h6{
+    width: 82px;
+    height: 18px;
+    overflow-x: 8px;
+    overflow-y: 4px;
+
+    font-family: Montserrat;
+    font-style: Medium;
+    font-size: 12px;
+    font-weight: 500;
+
+    display: flex;
+
+    align-items: center;
+
+    /* border: 2px solid purple; */
+}
+.my_skill_badges_wrapper{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+/* My experience content started */
+.my_experience{
+width: 60rem;
+height: 534px;
+background-color: #ffffff;
+
+margin-top:4rem;
+margin-left: 8rem;
+}
