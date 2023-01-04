@@ -30,28 +30,24 @@ export default function Home() {
             <h2 className="heading">We Offer a Full Range of B2B Services!</h2>
             <Line />
             <h3 className="subheading">
-              YourProductMatters specializes in offering services to
-              medium-sized and large businesses all across the world.
+            YourProductMatters specializes in offering services to medium-sized and large businesses all across the world.
+
             </h3>
             <ul className={styles.list}>
               <li>
                 <p className="paragraph">
-                  Our broad technical expertise and business acumen helps us
-                  design distinctive solutions that support various businesses
-                  in attracting and retaining new customers.
+                Our broad technical expertise and business acumen help us design distinctive solutions that support various businesses in attracting and retaining new customers.
+
                 </p>
               </li>
               <li>
                 <p className="paragraph">
-                  With a well coordinated unit of 70+ employees, YourProductMatters serves its customers globally regardless of their
-                  geographical region, operational domain and organizational
-                  fine-points.
+                With a well-coordinated unit of 70+ employees, YourProductMatters serves its customers globally regardless of their geographical region, operational domain, and organizational fine points.
                 </p>
               </li>
               <li>
                 <p className="paragraph">
-                  We stick to a well-organized and managed development process.
-                  Above all, we respect deadlines!
+                We stick to a well-organized and managed development process. Above all, we respect deadlines!
                 </p>
               </li>
             </ul>
@@ -70,15 +66,11 @@ export default function Home() {
         <div className="container">
           <div className="flex">
             <div className="fb2">
-              <h2 className="heading">Who We are</h2>
+              <h2 className="heading">Who We Are</h2>
               <Line />
               <p className="paragraph">
-                YourProductMatters is a one-stop shop for contemporary
-                web/mobile development projects! Our team comprises a talent
-                pool that aims to build complex designs schematically. We
-                possess a great track record of understanding client needs
-                quickly, walking you through each step of the process, and
-                delivering a high-quality product on budget and on schedule.
+              YourProductMatters is a one-stop shop for contemporary web/mobile development projects! Our team comprises a talent pool that aims to build complex designs schematically. We possess a great track record of understanding client needs quickly, walking you through each step of the process, and delivering a high-quality product on budget and schedule.
+
               </p>
               {/* <button className="btn btn-Dark">
                 {" "}

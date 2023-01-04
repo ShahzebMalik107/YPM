@@ -21,7 +21,7 @@ const services = () => {
         <div className="container">
           <h1 className={"heading " + styles.heading_lite}>
             We work as an <span>extension of you.</span> Let's go on an
-            imporvement journey, together.
+            improvement journey, together.
           </h1>
         </div>
       </section>
@@ -38,7 +38,7 @@ const services = () => {
               we've built lasting relationships with companies of all sizes from
               a range of industries. <br /> <br /> We don't pretend to have all
               the answers at the start. But we have the experience to know the
-              best path to follow, the agility to adapt as we go along, and the
+              best path to follow, the agility to adapt as we go along and the
               drive to always deliver on our commitments. <br />
               <br /> This is our way and it's the journey we'd like to take
               together with you.
@@ -70,10 +70,8 @@ const services = () => {
               needs: DevOps engineers, backend developers, frontend developers,
               test engineers, project managers, and UX/UI designers.
               <br />
-              <br /> Our Project Managers will work closely with you to bridge
-              your requirements to the development team. So while we are
-              bringing to life your ideas, you can stay focused on the core of
-              your business.
+              <br /> Our Project Managers will work closely with you to bridge your requirements to the development team. So while we are bringing your ideas to life, you can stay focused on the core of your business.
+
             </p>
           </div>
         </div>
@@ -84,9 +82,7 @@ const services = () => {
           <div className={styles.service_left}>
             <h2 className="subheading">Web Application Development</h2>
             <p className="paragraph-small">
-              From initial analysis to design, prototyping, and implementation,
-              followed by support and maintenance, we provide custom end-to-end
-              web development services.
+            From initial analysis to design, prototyping and implementation, followed by support and maintenance, we provide custom end-to-end web development services.
             </p>
             <ul className={styles.list}>
               <li>
@@ -96,7 +92,7 @@ const services = () => {
                 <p className="paragraph-small"> Software integration </p>
               </li>
               <li>
-                <p className="paragraph-small"> Software modernisation </p>
+                <p className="paragraph-small"> Software modernization </p>
               </li>
               <li>
                 <p className="paragraph-small"> API development </p>
@@ -146,7 +142,7 @@ const services = () => {
               <li>
                 <p className="paragraph-small">
                   {" "}
-                  Cross-platform solutions (such as, React Native, Unity 3D,
+                  Cross-platform solutions (such as React Native, Unity 3D,
                   Flutter, etc.)
                 </p>
               </li>
@@ -163,9 +159,7 @@ const services = () => {
           <div className={styles.service_left}>
             <h2 className="subheading">UI/UX Design</h2>
             <p className="paragraph-small">
-              We aspire to create effective UX/UI design solutions. Focused on
-              the end-user experience, we use design to improve how people
-              interact with products and how they engage with businesses.
+            We aspire to create effective UX/UI design solutions. Focused on the end-user experience, we use design to improve how people interact with products and engage with businesses.
             </p>
             <ul className={styles.list}>
               <li>
@@ -243,9 +237,8 @@ const services = () => {
           <div className={styles.service_left}>
             <h2 className="subheading">SEO and Digital Marketing</h2>
             <p className="paragraph-small">
-              Our digital marketers have expertise in creating unique social
-              campaigns and efficient SEO plans to rank up your business or
-              portfolios over search engines and social media platforms.
+            Our digital marketers have expertise in creating unique social campaigns, and efficient SEO plans to rank up your business or portfolios over search engines and social media platforms.
+
             </p>
            
           </div>

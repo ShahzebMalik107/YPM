@@ -34,10 +34,8 @@ const HeroBanner = () => {
                   <div className={Style.slider_text}>
                     <h2 className="heading ">Web Development</h2>
                     <p className="paragraph ">
-                      Team of highly experienced web developers to help your
-                      brand reach its full potential. Get more sales for your
-                      business with the high quality and professional web
-                      development experience.
+                    Team of highly experienced web developers to help your brand reach its full potential. Get more sales for your business with high-quality and professional web development experience.
+
                     </p>
                     <button className="btn btn-light">
                       <Link href={"/services#webdev"}>Learn more</Link>
@@ -71,7 +69,7 @@ const HeroBanner = () => {
                     <h2 className="heading ">Mobile App Development</h2>
                     <p className="paragraph ">
                       {
-                        "  We offer you design, development, integration, and management service for your app. Leading the entire process from ideation and concept to delivery, and to ongoing support."
+                        "  We offer you design, development, integration and management service for your app. Leading the entire process from ideation and concept to delivery and ongoing support."
                       }
                     </p>
                     <button className="btn btn-light">
@@ -106,7 +104,7 @@ const HeroBanner = () => {
                     <h2 className="heading">UI/UX Design</h2>
                     <p className="paragraph">
                       {
-                        " We are specialized in creating interactive and smooth UI/UX designs that provide a better user experience for your product. Making it user-friendly for consumers and competitive in the market."
+                        " We specialize in creating interactive and smooth UI/UX designs that provide a better user experience for your product. Making it user-friendly for consumers and competitive in the market."
                       }
                     </p>
                       <button className="btn btn-light"><Link href={"/services#uiux"}><a >Learn more</a></Link></button> 
@@ -139,7 +137,7 @@ const HeroBanner = () => {
                     <h2 className="heading light">Graphic Design</h2>
                     <p className="paragraph light">
                       {
-                        "A good design influences the choices, decisions & buying behavior of customers. Our design team is highly experienced in creating the right set of designs and color combinations for your brand's success."
+                        "We specialize in creating interactive and smooth UI/UX designs that provide a better user experience for your product. Making it user-friendly for consumers and competitive in the market."
                       }{" "}
                     </p>
                     <button className="btn btn-Dark">

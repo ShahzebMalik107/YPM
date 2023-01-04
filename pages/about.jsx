@@ -19,6 +19,7 @@ export default function team() {
           <h2 className="subheading">Our Company</h2>
           <p className="paragraph">
           From fresh, visually appealing web design and custom application development to search engine optimization and social media management, YourProductMatters is a one-stop shop. We are a web design and development company with the expertise to build the next generation of your website. We work hard to understand what you want your site to do and create it exactly as you envisioned.
+
           </p>
         </div>
         <div className={"fb2 " + styles.aml}>
@@ -34,6 +35,7 @@ export default function team() {
             <h2 className="subheading">Our Vision</h2>
             <p className="paragraph">
             As a full-service digital agency with a passion for ingenuity and innovation in every medium, YourProductMatters will continue to focus on expanding its digital expertise to bring you the best solutions. We are happy and proud to have a large base of satisfied clients and success stories in our portfolio.
+
 
             </p>
           </div>

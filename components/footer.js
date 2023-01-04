@@ -12,10 +12,8 @@ function Footer() {
             <img className={style.footer_logo} src="logo-white.svg" alt="" />
             <Line />
             <p className={"paragraph light" + " " + style.footer_text}>
-              YourProductMatters is a full-service digital agency with a
-              passion for ingenuity and innovation in every medium, YourProductMatters focuses on expanding its digital expertise to bring you
-              the best solutions. We are happy and proud to have in our
-              portfolio a large base of satisfied clients and success stories.
+            YourProductMatters is a full-service digital agency with a passion for ingenuity and innovation in every medium. YourProductMatters focuses on expanding its digital expertise to bring you the best solutions. We are happy and proud to have a large base of satisfied clients and success stories in our portfolio.
+
             </p>
           </div>
           <div className={style.footer_right}>
