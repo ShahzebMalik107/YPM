@@ -1,7 +1,7 @@
 .profile_content_cover{
 
 background-color: #F2F9FF;
-width: ;
+
 }
 .profile_content_main{
     
@@ -395,7 +395,11 @@ width: ;
                 background-color: #FFFFFF;
                 margin: 2% 10% 2% 5%;
             }
-  
+            .download_btn button {
+                
+                width: 19rem;
+                
+            }
 
     }
 
@@ -452,6 +456,13 @@ width: ;
     }
     @media screen and (max-width: 810px) 
     {
+        .profile_wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            margin: 0px auto;
+        }
         .profile_content_main_column{
             
             display: grid;
@@ -461,7 +472,7 @@ width: ;
             margin-left: 0rem;
         }
         .my_expertise h1 {
-            margin-left: 0rem;
+            padding-left: 0rem;
           
         }
         .my_skill_content h1 {
@@ -477,12 +488,10 @@ width: ;
             max-width: 90%;
             padding: 0rem 5rem;
         }
-        .my_expertise h1 {
-            margin-left: 5rem;
-        }
+     
         .my_expertise video{
             
-            width: 100%;
+            width: 100vw;
         
          
          }
@@ -504,3 +513,14 @@ width: ;
     }
 }
 
+@media screen and (max-width: 650px)
+{
+.my_expertise h1 {
+    padding-left: 5rem;
+}
+.my_expertise{
+   
+    width: 0rem;
+    
+}
+}
