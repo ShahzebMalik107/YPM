@@ -4,124 +4,145 @@ import Head from "next/head";
 import PasswordProtected from "../components/password_protected";
 import React from 'react'
 import profile  from "./profile.jpeg" 
+import Designation from "../components/talentdatapagecomponents/Designation";
+import SkillBadge from "../components/talentdatapagecomponents/SkillBadge";
+import Percentage from "../components/talentdatapagecomponents/Percentage";
 
 
 
 const talentData = ({ hasReadPermission }) => {
-    console.log(profile)
+
+    const tempArr = ['UI/UX Design', 'Graphic Design', 'Video Editing', 'SAAS Design', 'Figma', 'Adobe XD', 'Adobe Photoshop', 'Adobe Indesign', 'Adobe Illustrator', 'Adobe After Effects']
+    
     if (!hasReadPermission) {
         return <PasswordProtected/>
     }
 
     return (
+        <div className={styles.profile_content_cover}>
         <section className={styles.profile_content_main}>
+            <section className={styles.profile_content_main_column}>
         <section className={styles.profile_wrapper}>
         <picture className={styles.profile_picture}>
         <img  src={profile.src} alt="img"></img>
         </picture>
-    <div className={styles.talent_detail}>
+        <div className={styles.talent_detail}>
         <h1>Talent Name</h1>
         <h5>UI/UX Field</h5>
         <p>Lorem ipsum dolor sit amet consectetur. Tellus arcu scelerisque diam parturient elementum egestas sem eu nec. Etiam eget ornare scelerisque orci venenatis sapien in. Commodo ante at viverra lectus dolor. Ipsum vitae consectetur augue a. Nulla nunc quis pellentesque amet odio massa eleifend. </p>
         </div>
 
-        <section className={styles.hire_me}> 
-        <h1>Hire Me!</h1>
-        <div className={styles.hire_details}>
+      {/* hire me div */}
+         </section>
+         <section className={styles.hire_me}> 
+         <h1>Hire Me!</h1>
+         <div className={styles.hire_details}>
+         <div>
+        <h3>$15</h3>
+        <p>Hourly Rate</p>    
+        </div>
+
+
         <div>
-            <h3>$15</h3>
-            <p>Hourly Rate</p>
+          <h3>20+</h3>
+          <p>Jobs Done</p>
             
         </div>
         <div>
-            <h3>20+</h3>
-            <p>Jobs Done</p>
-            
-        </div>
-        <div>
-            <h3>14+</h3>
-            <p>Rehires</p>
-            
+        <h3>14+</h3>
+         <p>Rehires</p>  
         </div>
         </div>
         <button>Contact Me!</button>
         
-        </section>
+        </section> 
        
-        
-        
-         </section>
-    <div className={styles.my_expertise_content}>
-    <div className={styles.my_expertise}>
+          </section>
+          
+          <section className={styles.profile_content_main_column2}>
+            
+
+            {/* video */}
+          <div className={styles.my_expertise}>
         <h1>My Expertise/Featured Projects</h1>
-        <video width="721" height="329" controls>
+        <div className={styles.my_expertise_video}>
+        <div className={styles.line}>
+        <video  controls>
         <source src="movie.mp4" type="video/mp"/>
         <source src="movie.ogg" type="video/ogg"/>
         </video>
-
+        </div> 
+        </div>
         </div>
 
-        <section className={styles.my_skill_content}>
+
+   <section className={styles.my_skill_content}>
             <h1>My Skills</h1>
             <div className={styles.my_skill_badges_wrapper}>
-            <div className={styles.my_skill_badge}>
-                <h6>UI/UX Design</h6>
-            </div>
-            <div className={styles.my_skill_badge}>
-                <h6>Graphic Design</h6>
-            </div>
-            <div className={styles.my_skill_badge}>
-                <h6>Video Editing</h6>
-            </div>
+            {tempArr.map(ele => 
+                <SkillBadge skill={ele} />    
+            )}
+           
             
-            </div>
+        </div>
+        <div className={styles.percentage_component}>
+        <Percentage 
+        skill="80%"
+        description="Job Sucess"
+        />
+        <Percentage 
+        skill="100%"
+        description="Recommendation"
+        />
+        
+        </div>
+        <div className={styles.percentage_component}>
+        <Percentage 
+        skill="100%"
+        description="On Time"
+        />
+        <Percentage 
+        skill="100%"
+        description="On Budget"
+        />
+        </div>
+        </section>  
 
-            <div className={styles.my_skill_badges_wrapper}>
-            <div className={styles.my_skill_badge}>
-                <h6>SAAS Design</h6>
-            </div>
-            <div className={styles.my_skill_badge}>
-                <h6>Figma</h6>
-            </div>
-            <div className={styles.my_skill_badge}>
-                <h6>Adobe XD</h6>
-            </div>
-            
-            </div>
-            <div className={styles.my_skill_badges_wrapper}>
-            <div className={styles.my_skill_badge_one}>
-                <h6>Adobe Photoshop</h6>
-            </div>
-            <div className={styles.my_skill_badge_one}>
-                <h6>Adobe Indesign</h6>
-            </div>
-            </div>
-            <div className={styles.my_skill_badges_wrapper}>
-            <div className={styles.my_skill_badge_one}>
-                <h6>Adobe Illustrator</h6>
-            </div>
-            <div className={styles.my_skill_badge_one}>
-                <h6>Adobe After Effects</h6>
-            </div>
-            
-            
-            
-        </div>
-        </section>
-        </div>
-        <section className={styles.my_experience}>
+        </section> 
+        <section className={styles.profile_content_main_column3}>
+        
+ <section className={styles.my_experience}>
+ <div className={styles.linecircule}>
             <h1>My Experience</h1>
-            <div className={styles.my_experience_designation}>
-                <h3>Designation</h3>
-                <h5>Company Name, Location</h5>
-                <h6>Start Date - End Date</h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Ut nam posuere ut eget posuere mi a urna ornare. Morbi est tellus lectus netus at lacus purus neque.</p>
-            </div>
-
-
+            <Designation
+            designation="Designation"
+            company_name="Company Name, Location"
+            start_end_date="Start Date - End Date"
+            detail="Lorem ipsum dolor sit amet consectetur. Ut nam posuere ut eget posuere mi a urna ornare. Morbi est tellus lectus netus at lacus purus neque."
+            />
+            <Designation
+            designation="Designation"
+            company_name="Company Name, Location"
+            start_end_date="Start Date - End Date"
+            detail="Lorem ipsum dolor sit amet consectetur. Ut nam posuere ut eget posuere mi a urna ornare. Morbi est tellus lectus netus at lacus purus neque."
+            />
+            <Designation
+            designation="Designation"
+            company_name="Company Name, Location"
+            start_end_date="Start Date - End Date"
+            detail="Lorem ipsum dolor sit amet consectetur. Ut nam posuere ut eget posuere mi a urna ornare. Morbi est tellus lectus netus at lacus purus neque."
+            />
+          </div>   
         </section>
         
+        <div className={styles.download_btn}>
+          <button>DownloadCV</button>
+          </div>
+            </section>
          </section>
+         </div>
+        
+         
       )
     }
 
