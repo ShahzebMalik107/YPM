@@ -37,18 +37,18 @@ const talentData = ({ hasReadPermission }) => {
          <section className={styles.hire_me}> 
          <h1>Hire Me!</h1>
          <div className={styles.hire_details}>
-         <div>
+         <div className={styles.hire_details_hourly}>
         <h3>$15</h3>
         <p>Hourly Rate</p>    
         </div>
 
 
-        <div>
+        <div className={styles.hire_hourly}>
           <h3>20+</h3>
           <p>Jobs Done</p>
             
         </div>
-        <div>
+        <div className={styles.hire_hourly}>
         <h3>14+</h3>
          <p>Rehires</p>  
         </div>
@@ -64,9 +64,10 @@ const talentData = ({ hasReadPermission }) => {
 
             {/* video */}
           <div className={styles.my_expertise}>
+            <div className={styles.line}>
         <h1>My Expertise/Featured Projects</h1>
         <div className={styles.my_expertise_video}>
-        <div className={styles.line}>
+        
         <video  controls>
         <source src="movie.mp4" type="video/mp"/>
         <source src="movie.ogg" type="video/ogg"/>
@@ -76,7 +77,7 @@ const talentData = ({ hasReadPermission }) => {
         </div>
 
 
-   <section className={styles.my_skill_content}>
+   <section className={styles.skill_me}>
             <h1>My Skills</h1>
             <div className={styles.my_skill_badges_wrapper}>
             {tempArr.map(ele => 
@@ -85,6 +86,7 @@ const talentData = ({ hasReadPermission }) => {
            
             
         </div>
+        <div className={styles.percentage_component_main}>
         <div className={styles.percentage_component}>
         <Percentage 
         skill="80%"
@@ -106,9 +108,14 @@ const talentData = ({ hasReadPermission }) => {
         description="On Budget"
         />
         </div>
+        </div>
         </section>  
+        <div className={styles.download_btn2}>
+          <button>Download CV</button>
+          </div>
 
         </section> 
+        
         <section className={styles.profile_content_main_column3}>
         
  <section className={styles.my_experience}>
@@ -136,7 +143,7 @@ const talentData = ({ hasReadPermission }) => {
         </section>
         
         <div className={styles.download_btn}>
-          <button>DownloadCV</button>
+          <button>Download CV</button>
           </div>
             </section>
          </section>

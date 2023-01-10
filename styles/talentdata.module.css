@@ -15,29 +15,34 @@ background-color: #F2F9FF;
     max-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
 }
+
 .profile_content_main_column2{
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: center; 
+    margin-top: 1%;
 }
+
 .profile_content_main_column3{
 
     display: flex;
-    justify-content: flex-start;
-     max-width: 95%; 
-   
+    justify-content: center;
+    padding: 1% 0%;
+   position: relative;
+
+
 }
 .profile_wrapper{
+ 
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-basis: 50%;
    
-    max-width: 70%;
-    margin: 0px auto;
-
 }
 
 .profile_picture img{  
@@ -46,6 +51,7 @@ background-color: #F2F9FF;
     border-radius: 50%;  
     padding: 1rem;    
 }
+
 .talent_detail{
     
     margin: 0px auto;
@@ -55,23 +61,25 @@ background-color: #F2F9FF;
 }
 
 .talent_detail h1{
-    width: 261px;
-    height: 29px;
+    /* width: 261px; */
+    /* height: 29px; */
     font-style: SemiBold;
     font-size: 24px;
     color: #000000;
     font-family:  Montserrat;
+    margin: 0px;
    
 
 }
 .talent_detail h5{
 
-    width: 261px;
-    height: 20px;
+    /* width: 261px;
+    height: 20px; */
     font-style: regular;
     font-size: 16px;
     color: #000000;
     font-family:  Montserrat;
+    margin: 0px;
     
     }
 
@@ -82,7 +90,8 @@ background-color: #F2F9FF;
     size: 14px;
     line-height: 22px;
     align-items: left;
-    }
+    
+}
 
 
 /* row 2 started */
@@ -95,14 +104,13 @@ background-color: #F2F9FF;
 }
 .hire_me{
 
-  
     background-color: #FFFFFF;
-    height:220px;
-    margin-top: 22px;
-    margin: 0px 3rem;
-    padding: 25px;
-   
+    margin-right: 1.5%;
+    padding: 1% 2%;
+    flex-basis: 30%;
 }
+   
+
 .hire_me h1{
     
     font-style: SemiBold;
@@ -111,27 +119,28 @@ background-color: #F2F9FF;
     font-family:  Montserrat;
 
     margin: 0px auto;
-   
+    padding-left: 6%;
+      
 }
 .hire_details{
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
-
+    justify-content: space-between;
+    padding: 6%;
 }
 
 .hire_details h3{
+
     color: #A387BC;
     font-family: Montserrat;
     font-style: SemiBold;
     font-size: 20px;
 
-
 }
 
 .hire_details p{
+
     color: #2A2441;
     font-family: Montserrat;
     font-style: Regular;
@@ -142,16 +151,37 @@ background-color: #F2F9FF;
 .hire_me button{
 
     margin: 0px auto;
-    padding: 10px 150px 10px 150px ;
     background-color: #A387BC;
-   
-
     color: #FFFFFF;
     font-family: Montserrat;
     font-style: medium;
     font-size: 14px;
     border: none;
+    width: 100%;
+    padding: 2%;
 
+}
+.download_btn2 button{
+ 
+    display: none;
+}
+
+.skill_me{
+
+    background-color: #FFFFFF;  
+    padding: 2% 2%;
+    flex-basis: 30%;
+
+}
+.skill_me h1{
+ 
+    font-style: SemiBold;
+    font-size: 24px;
+    color: #000000;
+    font-family:  Montserrat;
+
+    margin: 0px auto;
+    padding-left: 6%;
 
 }
 
@@ -162,27 +192,44 @@ background-color: #F2F9FF;
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #F2F9FF;
-   
+  
 }
 
 .my_expertise{
 
     background-color: #FFFFFF;
-    padding: 3%;
+    margin-right: 2%;
+    flex-basis: 65%;
+    position: relative;
+
+   
 }
-.my_expertise_video{
-    display: flex;
-    align-items: center;
-    justify-content: flex;
+.my_expertise video {
+    
+    width: 91% !important; }
 
 
-}
 .line{
+    
     border-left: 2px solid #2A2441;
-    height: 290px;
-    margin: 0px auto;
+    margin: 0% 2%;
 } 
+
+.line::before{
+  
+    content: "''";
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    POSITION: absolute;
+    left: 0.9%;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 1;
+
+}
 
 .my_expertise h1{
     margin-left: 5rem;
@@ -193,9 +240,9 @@ background-color: #F2F9FF;
 
 }
 .my_expertise video{
-    margin-left: 5rem;
-   width: 50rem;
-   height: 20rem;
+    margin-left: 5%;
+   width: auto;
+   
 
 }
 
@@ -204,7 +251,6 @@ background-color: #F2F9FF;
 .my_skill_content{
     
     background-color: #FFFFFF;
-   
     margin: 2% 5% 2% 3%;
      
 }
@@ -218,6 +264,7 @@ background-color: #F2F9FF;
 }
 
 .my_skill_badge{
+
     background-color: #DAEAF8;
     padding: 10px;
     display: flex;
@@ -236,24 +283,28 @@ background-color: #F2F9FF;
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin: 5px;
     font-family: Poppins;
     border-radius: 24px;
 
 }
 .my_skill_badge p{
+
     font-family: Poppins;
     font-style: Medium;
     font-size: 122px;
     margin: 0px;
-     /* border: 2px solid purple;  */
+    
 }
 .my_skill_badges_wrapper{
 
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0rem 1rem;
+    
 
 }
 /* My experience content started */
@@ -262,29 +313,19 @@ background-color: #F2F9FF;
 
    
     background-color: #ffffff;
-
-    
-    padding: 3.5%;
-     width: 65%;
-    /* border: 2px solid red; */
-    height: 40rem;
-   
-    
+    flex-basis: 65%;
+    margin-right: 2%;
+ 
 }
 
 .my_experience h1{
  
-    /* margin-left: 5rem; */
-    /* margin-top: 3rem; */
-
     padding: 0px;
-
-/* width: 182px; */
-    
-
     font-family: Montserrat;
     font-style: SemiBold;
     font-size: 24px;
+    color: #A387BC;
+   
 
 }
 
@@ -295,9 +336,7 @@ background-color: #F2F9FF;
     font-style: Medium;
     font-size: 20px;
     color: #A387BC;
-
-   
-    /* margin-left: 5rem; */
+    margin: 0px auto;
 
 }
 
@@ -307,9 +346,7 @@ background-color: #F2F9FF;
     font-style: Regular;
     font-size: 16px;
     color: #2A2441;
-
-
-    
+    margin: 0px auto;
 
  
 }
@@ -319,6 +356,7 @@ background-color: #F2F9FF;
     font-style: Regular;
     font-size: 12px;
     color: #2A2441;
+    margin: 0px auto;
   
 }
 .my_experience_designation p{
@@ -331,128 +369,138 @@ background-color: #F2F9FF;
 
 
 }
-
-
-
-.percentage_component{
-   
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 7rem;
-   
+.my_experience_designation::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    left: 1.9%;
+    border-radius: 50%;
 }
+
 .download_btn{
-    
-  width: 15rem;
-  padding-left: 8%; 
+  
+ flex-basis: 30%;
+  
 }
 
 .download_btn button{
-    
-    
+     
     background-color: #A387BC;
-    width: 25rem;
-    height: 7%;
-   
-
-
-
+    align-items: center;
     color: #FFFFFF;
     font-family: Montserrat;
     font-style: medium;
     font-size: 14px;
     border: none;
+    width: 100%;
+    height: 6vh;
    
     
 }
 
 .linecircule{
     border-left: 2px solid #2A2441;
-    height: 490px;
-    padding: 0px 80px;
+    padding: 0px 38px;
+    margin-left: 1%;
     
-   
-} 
-
-@media screen and (max-width: 1518px) 
-    {
-        .hire_me{
+}
+.linecircule::before{
+  
+        content: "''";
+        width: 20px;
+        height: 20px;
+        background-color: #ffffff;
+        POSITION: absolute;
+        left: 1.4%;
+        border: 2px solid black;
+        border-radius: 50%;
+        z-index: 1;
+        
     
-            margin-right: 10%;}
+}
+ 
+.percentage_component{
 
-        .my_expertise {
-           padding: 0%;
-           height: 30rem;
-            }
-            .my_expertise video{
-            
-               width: 45rem;
-               height: 20rem;
-            
-            }
-            .my_skill_content{
-                background-color: #FFFFFF;
-                margin: 2% 10% 2% 5%;
-            }
-            .download_btn button {
-                
-                width: 19rem;
-                
-            }
-
-    }
+        display: flex;
+        justify-content: space-between;
+}
 
  @media screen and (max-width: 1174px) 
     {
-        .profile_content_main_column2{
+    .profile_content_main_column2{
 
-            display: grid;
+        padding-left: 0%;   }
             
-        }
-        .my_expertise {
+    .my_expertise {
           
-            padding: 0%;
-            width: 50rem;
-            height: 30rem;
+        padding: 2% 2%;
+        width: auto;
+          
+    }
+    .my_expertise h1{
+          
+        margin-left: 6%;
+          
+    }
+    .my_expertise video {
 
-         
-        }
+        width: auto;
+        
+    }
 
-        .my_skill_content{
-    
-           
-           
-            margin: 1% 0% 2% 0%;
-             
-        }
-        .download_btn button {
+    .download_btn button {
             
-            width: 10rem;
+        width: 100%
             
     }
     .my_experience {
-    margin-left: 5rem;
+        
+         /* margin-left: 2.5%; */
     }
-    .my_skill{
-       
-        height: 28rem;
-    }
+    
     .hire_me{
        
     
-        width: 18rem;
-        margin-right: 10%;
+        width: 98%;
+        padding: 2% 2%;
+       
     }
     .hire_me button {
-        
-        padding: 10px 88px 10px 88px;
         
         font-size: 12px;
         
     }
+    .my_skill_badges_wrapper{
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 3% 3%;
+    }
+    .linecircule{
+       
+       
+        margin-left: 4%;
+    }
+    
+    .linecircule::before{
+  
+        left: 3.2%;
+}
+    .line::before{
+  
+      left: 3.5%;
   
 
+}
+.my_experience_designation::before {
+    
+    left: 3.8%;
+    
+}
     }
     @media screen and (max-width: 810px) 
     {
@@ -465,11 +513,12 @@ background-color: #F2F9FF;
         }
         .profile_content_main_column{
             
-            display: grid;
-            /* max-width: 70%; */
+            display: flex;
+         
         }
         .my_expertise video {
-            margin-left: 0rem;
+            margin-left: 1rem;
+            width: auto;
         }
         .my_expertise h1 {
             padding-left: 0rem;
@@ -481,46 +530,211 @@ background-color: #F2F9FF;
         }
         .hire_me {
     
-            margin: 13px auto;
+            margin: 2px auto;
+            padding: 2% 0%;
             
         }
         .my_skill_badges_wrapper {
-            max-width: 90%;
-            padding: 0rem 5rem;
+       
+            padding: 0rem 0rem;
         }
-     
-        .my_expertise video{
-            
-            width: 100vw;
-        
+        .download_btn{
+            padding-left: 2%;
+        }
+        .profile_content_main_column3{
+           
+            padding: 2% 0%;
+           
+        }
+       
+        .my_experience{
+            margin-left: 1%;
+        }
+      
+
+        .linecircule::before{
+  
+            left: 3.2%;
          
-         }
     }
-    
-    @media screen and (max-width: 680px) 
+    .line::before{
+      
+        left: 3.0%;
+    }
+
+    .hire_me button {
+        margin: 2px 6px;
+        width: 95%;
+        padding: 2%;
+    }
+
+
+
+    .my_experience_designation::before {
+       
+        left: 4.1%;
+        
+    }
+      
+    }
+
+    @media screen and (max-width: 767px) 
     {
        
-    .my_skill_content{
-        margin: 0px auto;
-        padding: 0rem 5rem;
-    }
-    .my_experience{
+        .profile_content_main_column{
+            display: block;
+            padding: 2% 2%;
+        }
+
+        .talent_detail h1 {
+    
+            font-size: 20px;
+    
+        }
+        .talent_detail p {
+  
+        font-size: 14px;
+    
+        }
        
-        padding: 0%;
-        margin: 10px;
+        .hire_me {
+            
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+            
+            
+        }
+        .hire_me h1 {
+            
+        margin: 0px;
+        padding-left: 0%;
+
+        }
+        .hire_me button {
+           
+        width: 15%;
+        padding: 1%;
+
+        }
+        .hire_details {
+           
+            padding: 0% 0%;
+            flex-basis: 50%;
+        
+
+        }
+        .profile_content_main_column2{
+
+            padding-left: 1%;
+            display: flex ;
+            flex-wrap: wrap;
+            
+        }
+
+        .line::before {
+            left: 2.5%;
+        }
+
+
+    .skill_me{
+
+
+            background-color: #FFFFFF;
+            margin: 3% 3%;
+            padding: 2% 2%;
+            flex-basis: 100%; 
+        
+        }
+        .skill_me h1{
+            padding-left: 1%;
+            
+        }
+        .my_expertise{
+        
+            margin: 3% 3%;
+            flex-basis: 100%;
+            order: 2;
+           
+        }
+        .my_expertise h1{
+        
+           margin: 3% 4%;
+           
+        }
+
+        .my_skill_badges_wrapper{
+
+            padding: 1rem 0rem;
+        }
+
+        .download_btn{
+
+            display: none;
+        }
+        .my_experience{
+
+            flex-basis: 97%;
+           margin: 0% 3%;
+        }
+        .linecircule::before {
+
+            left: 5.2%;
+        }
+        .percentage_component_main{
+
+            display: flex;
+           
+        }
+
+        .linecircule{
+            margin-left: 4%;
+            padding: 0px 21px;
+           
+        } 
+        .download_btn2{
+
+            padding-left: 4%; 
+            
+          }
+          
+          .download_btn2 button{
+              
+              display: inline;
+              background-color: #A387BC;
+              color: #FFFFFF;
+              font-family: Montserrat;
+              font-style: medium;
+              font-size: 14px;
+              border: none;
+              width:47vw;
+              height: 5vh;
+             
+
+        
+          }
+          .my_experience_designation::before {
+       
+            left: 6.2%;
+            
+        }
+
+        }
+        @media screen and (max-width: 520px) 
+    {
+
+        .talent_detail h1 {
+            font-size: 16px;
+        }
+        .talent_detail h5 {
+            font-size: 14px;
+        }
+        
+    .talent_detail p {
+    font-size: 12px;
+}
+
+
 
         
     }
-}
-
-@media screen and (max-width: 650px)
-{
-.my_expertise h1 {
-    padding-left: 5rem;
-}
-.my_expertise{
-   
-    width: 0rem;
-    
-}
-}

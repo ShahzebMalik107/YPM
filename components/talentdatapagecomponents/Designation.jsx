@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "../../styles/talentdata.module.css";
 
 
+
 function Designation(props) {
     const { Designation,company_name,start_end_date,detail } = props
 
