@@ -8,16 +8,17 @@ function Percentage(props) {
     <div className={styles.percentage_main_content} >
     <h3>{skill}</h3>
     <div className={styles.percentage_box_wrapper}>
-        <span className={styles.percentage_box}></span>
-        <span className={styles.percentage_box}></span>
-        <span className={styles.percentage_box}></span>
-        <span className={styles.percentage_box}></span>
-        <span className={styles.percentage_box}></span>
-        <span className={styles.percentage_box}></span>
-        <span className={styles.percentage_box}></span>
-        <span className={styles.percentage_box}></span>
-        <span className={styles.percentage_box_empty}></span>
-        <span className={styles.percentage_box_empty}></span>
+        <span className={styles.percentage_box1}></span>
+        <span className={styles.percentage_box1}></span>
+        <span className={styles.percentage_box1}></span>
+        <span className={styles.percentage_box1}></span>
+        <span className={styles.percentage_box2}></span>
+        <span className={styles.percentage_box2}></span>
+        <span className={styles.percentage_box2}></span>
+        <span className={styles.percentage_box2}></span>
+        <span className={styles.percentage_box_empty3}></span>
+         <span className={styles.percentage_box_empty4}></span>
+       
         
         
     </div>

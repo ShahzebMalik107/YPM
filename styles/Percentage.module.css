@@ -1,5 +1,6 @@
 .percentage_wrap_content{
     display: flex;
+    flex-basis: 50%;
 
 }
 
@@ -12,7 +13,7 @@
 }
 
 
-.percentage_box{
+.percentage_box1 {
 
 
     background-color: #A387BC;
@@ -21,7 +22,23 @@
     margin: 2px;
     display: inline-block;
 }
-.percentage_box_empty{
+.percentage_box2 {
+
+
+    background-color: #A387BC;
+    width: 10px;
+    height: 10px; 
+    margin: 2px;
+    display: inline-block;
+}
+.percentage_box_empty3{
+    background-color:rgba(163, 135, 188, 0.3);
+    width: 10px;
+    height: 10px; 
+    margin: 2px;
+    display: inline-block;
+}
+.percentage_box_empty4{
     background-color:rgba(163, 135, 188, 0.3);
     width: 10px;
     height: 10px; 
@@ -34,4 +51,75 @@
     font-style: Regular;
     font-size: 16px;
     
+}
+@media screen and (max-width: 1174px) 
+{
+
+.percentage_box1 {
+
+
+    background-color: #A387BC;
+    width: 10px;
+    height: 10px; 
+    margin: 2px;
+    display: inline-block;
+}
+.percentage_box2 {
+
+    margin: 2px; 
+    display: none;
+}
+.percentage_box_empty3{
+   
+    background-color:rgba(163, 135, 188, 0.3);
+    width: 10px;
+    height: 10px; 
+    margin: 2px;
+    display: inline-block;
+}
+.percentage_box_empty4{
+   
+    display: none
+}
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) 
+{
+
+    .percentage_box{
+
+
+        
+        width: 5px;
+        height: 5px; 
+        
+        
+    }
+    .percentage_box_empty{
+        background-color:rgba(163, 135, 188, 0.3);
+        width: 5px;
+        height: 5px; 
+        margin: 2px;
+        display: inline-block;
+    }
+
+
+}
+
+
+@media screen and (max-width: 767px) 
+{
+
+.percentage_main_content p {
+             
+    font-size: 12px;
+}
 }
