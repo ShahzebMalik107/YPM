@@ -41,7 +41,7 @@ function Header_v2() {
                   setActivemenu(1);
                 }}
               >
-                <img src="logo.svg" alt="logo" />
+                <img src="/logo.svg" alt="logo" />
               </a>
             </Link>
           </div>
